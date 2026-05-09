@@ -377,10 +377,12 @@
     var io = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
-          if (entry.isIntersecting) entry.target.classList.add("is-visible");
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
         });
       },
-      { root: null, rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+      { root: null, rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
     );
 
     els.forEach(function (el) {
