@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoniStudio — AI Automation Studio</title>
+    <meta
+      name="description"
+      content="AI-powered websites, intake systems, and automation tools for modern businesses, creators, and professional service teams."
+    />
+    <meta property="og:title" content="BoniStudio — AI Automation Studio" />
+    <meta
+      property="og:description"
+      content="AI-powered websites, intake systems, and automation tools for modern businesses, creators, and professional service teams."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner container">
+        <a class="brand" href="#top" aria-label="BoniStudio home">
+          <span class="brand__name" data-i18n="nav.brand">BoniStudio</span>
+          <span class="brand__tag" data-i18n="nav.tagline">AI Automation Studio</span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a class="nav__link" href="#systems" data-i18n="nav.systems">Systems</a></li>
+            <li><a class="nav__link" href="#process" data-i18n="nav.process">Process</a></li>
+            <li><a class="nav__link" href="#why" data-i18n="nav.why">Why Us</a></li>
+            <li><a class="nav__link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <div class="nav__actions">
+            <button type="button" class="btn btn--ghost lang-toggle" id="langToggle" aria-label="Switch language">
+              <span id="langToggleLabel">中文</span>
+            </button>
+            <a class="btn btn--primary btn--sm" href="#contact" data-i18n="nav.bookDemo">Book a Demo</a>
+          </div>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Open menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">AI Automation Studio</p>
+            <h1 class="hero__title" data-i18n="hero.title">AI systems for modern businesses.</h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
+              We build AI-powered websites, intake systems, and automations that help small teams capture leads, reduce repetitive work, and launch faster.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact" data-i18n="hero.ctaPrimary">Book a Demo</a>
+              <a class="btn btn--secondary" href="#systems" data-i18n="hero.ctaSecondary">View Example Systems</a>
+            </div>
+            <p class="hero__trust" data-i18n="hero.trust">Bilingual. AI-first. Built fast. Designed for real business use.</p>
+          </div>
+          <div class="hero__visual reveal reveal--delay" aria-hidden="true">
+            <div class="mockup">
+              <div class="mockup__chrome">
+                <span class="mockup__dot"></span>
+                <span class="mockup__dot"></span>
+                <span class="mockup__dot"></span>
+                <span class="mockup__title" data-i18n="mock.windowTitle">BoniStudio / Live</span>
+              </div>
+              <div class="mockup__body">
+                <div class="mockup__card mockup__card--wide">
+                  <span class="mockup__label" data-i18n="mock.aiIntake">AI Intake</span>
+                  <span class="mockup__pill mockup__pill--live" data-i18n="mock.live">Live</span>
+                </div>
+                <div class="mockup__row">
+                  <div class="mockup__card">
+                    <span class="mockup__k" data-i18n="mock.leadCaptured">Lead Captured</span>
+                    <span class="mockup__v">+1</span>
+                  </div>
+                  <div class="mockup__card">
+                    <span class="mockup__k" data-i18n="mock.autoReply">Auto Reply</span>
+                    <span class="mockup__status mockup__status--ok" data-i18n="mock.sent">Sent</span>
+                  </div>
+                </div>
+                <div class="mockup__row">
+                  <div class="mockup__card">
+                    <span class="mockup__k" data-i18n="mock.bookingConfirmed">Booking Confirmed</span>
+                    <span class="mockup__v">14:30</span>
+                  </div>
+                  <div class="mockup__card">
+                    <span class="mockup__k" data-i18n="mock.workflowActive">Workflow Active</span>
+                    <span class="mockup__pulse"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section problem" id="problem">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="problem.title">
+            Your business should not lose leads because of outdated systems.
+          </h2>
+          <div class="grid grid--3">
+            <article class="card card--problem reveal"><p data-i18n="problem.p1">Outdated website experience</p></article>
+            <article class="card card--problem reveal"><p data-i18n="problem.p2">Repetitive customer questions</p></article>
+            <article class="card card--problem reveal"><p data-i18n="problem.p3">Missed leads from mobile visitors</p></article>
+            <article class="card card--problem reveal"><p data-i18n="problem.p4">Manual booking and follow-up</p></article>
+            <article class="card card--problem reveal"><p data-i18n="problem.p5">Weak bilingual support</p></article>
+            <article class="card card--problem reveal"><p data-i18n="problem.p6">No clear client intake flow</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="services.title">What we build</h2>
+          <div class="grid grid--2">
+            <article class="card card--service reveal">
+              <h3 class="card__title" data-i18n="services.s1.title">AI-Powered Website</h3>
+              <p class="card__text" data-i18n="services.s1.desc">
+                Modern, mobile-first websites designed to convert visitors into inquiries.
+              </p>
+            </article>
+            <article class="card card--service reveal">
+              <h3 class="card__title" data-i18n="services.s2.title">AI Intake System</h3>
+              <p class="card__text" data-i18n="services.s2.desc">
+                Collect client needs, qualify leads, and summarize inquiries automatically.
+              </p>
+            </article>
+            <article class="card card--service reveal">
+              <h3 class="card__title" data-i18n="services.s3.title">Business Automation</h3>
+              <p class="card__text" data-i18n="services.s3.desc">
+                Automate replies, forms, follow-ups, booking, and internal workflows.
+              </p>
+            </article>
+            <article class="card card--service reveal">
+              <h3 class="card__title" data-i18n="services.s4.title">Bilingual Digital System</h3>
+              <p class="card__text" data-i18n="services.s4.desc">
+                Built for businesses serving both English-speaking and Chinese-speaking clients.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section systems" id="systems">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="systems.title">Example systems</h2>
+          <p class="section__lead reveal" data-i18n="systems.lead">
+            Industry-specific systems we can customize and launch quickly.
+          </p>
+          <div class="grid grid--3">
+            <article class="card card--system reveal">
+              <h3 class="card__title" data-i18n="systems.law.title">Law Firm AI Intake System</h3>
+              <ul class="card__list">
+                <li data-i18n="systems.law.f1">AI consultation intake</li>
+                <li data-i18n="systems.law.f2">Case type routing</li>
+                <li data-i18n="systems.law.f3">Appointment booking</li>
+                <li data-i18n="systems.law.f4">Bilingual FAQ</li>
+                <li data-i18n="systems.law.f5">Lead summary email</li>
+              </ul>
+              <p class="card__status"><span data-i18n="systems.statusLabel">Status</span>: <span data-i18n="systems.law.status">Demo coming soon</span></p>
+              <a class="btn btn--secondary btn--full" href="#contact" data-i18n="systems.viewDemo">View Demo</a>
+            </article>
+            <article class="card card--system reveal">
+              <h3 class="card__title" data-i18n="systems.realtor.title">Realtor Lead System</h3>
+              <ul class="card__list">
+                <li data-i18n="systems.realtor.f1">Listing landing pages</li>
+                <li data-i18n="systems.realtor.f2">Buyer / seller lead forms</li>
+                <li data-i18n="systems.realtor.f3">AI follow-up</li>
+                <li data-i18n="systems.realtor.f4">Content automation</li>
+              </ul>
+              <p class="card__status"><span data-i18n="systems.statusLabel">Status</span>: <span data-i18n="systems.realtor.status">Planned</span></p>
+              <a class="btn btn--secondary btn--full" href="#contact" data-i18n="systems.viewDemo">View Demo</a>
+            </article>
+            <article class="card card--system reveal">
+              <h3 class="card__title" data-i18n="systems.creator.title">Creator Automation System</h3>
+              <ul class="card__list">
+                <li data-i18n="systems.creator.f1">Digital product landing page</li>
+                <li data-i18n="systems.creator.f2">AI caption workflow</li>
+                <li data-i18n="systems.creator.f3">Email capture</li>
+                <li data-i18n="systems.creator.f4">Social content pipeline</li>
+              </ul>
+              <p class="card__status"><span data-i18n="systems.statusLabel">Status</span>: <span data-i18n="systems.creator.status">Planned</span></p>
+              <a class="btn btn--secondary btn--full" href="#contact" data-i18n="systems.viewDemo">View Demo</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="process.title">From idea to working system in days.</h2>
+          <ol class="process__steps">
+            <li class="process__step card reveal">
+              <span class="process__num">01</span>
+              <div>
+                <h3 class="process__name" data-i18n="process.s1.title">Diagnose</h3>
+                <p class="process__desc" data-i18n="process.s1.desc">We identify the business bottleneck.</p>
+              </div>
+            </li>
+            <li class="process__step card reveal">
+              <span class="process__num">02</span>
+              <div>
+                <h3 class="process__name" data-i18n="process.s2.title">Prototype</h3>
+                <p class="process__desc" data-i18n="process.s2.desc">We create a fast visual and functional demo.</p>
+              </div>
+            </li>
+            <li class="process__step card reveal">
+              <span class="process__num">03</span>
+              <div>
+                <h3 class="process__name" data-i18n="process.s3.title">Build</h3>
+                <p class="process__desc" data-i18n="process.s3.desc">We launch the system with real tools and automation.</p>
+              </div>
+            </li>
+            <li class="process__step card reveal">
+              <span class="process__num">04</span>
+              <div>
+                <h3 class="process__name" data-i18n="process.s4.title">Improve</h3>
+                <p class="process__desc" data-i18n="process.s4.desc">We track usage and improve based on feedback.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section why" id="why">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="why.title">Why work with us</h2>
+          <p class="section__lead reveal" data-i18n="why.lead">
+            We do not just build pages. We build usable systems that connect design, automation, AI, and business workflow.
+          </p>
+          <ul class="why__list">
+            <li class="card why__item reveal" data-i18n="why.r1">AI-first workflow</li>
+            <li class="card why__item reveal" data-i18n="why.r2">Fast turnaround</li>
+            <li class="card why__item reveal" data-i18n="why.r3">Bilingual execution</li>
+            <li class="card why__item reveal" data-i18n="why.r4">Product-minded development</li>
+            <li class="card why__item reveal" data-i18n="why.r5">Designed for small teams</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="contact.title">Ready to modernize your business system?</h2>
+          <p class="section__lead reveal" data-i18n="contact.lead">
+            Send us your current website or workflow. We will show you where AI and automation can create immediate leverage.
+          </p>
+          <div class="contact__grid reveal">
+            <div class="card contact__card">
+              <p class="contact__label" data-i18n="contact.emailLabel">Email</p>
+              <a class="contact__email" href="mailto:bonistudio.core@gmail.com">bonistudio.core@gmail.com</a>
+              <div class="contact__actions">
+                <a class="btn btn--primary" href="mailto:bonistudio.core@gmail.com" data-i18n="contact.emailUs">Email Us</a>
+                <a
+                  class="btn btn--secondary"
+                  id="contactBookDemo"
+                  href="mailto:bonistudio.core@gmail.com?subject=Book%20a%20Demo"
+                  data-i18n="contact.bookDemo"
+                  >Book a Demo</a
+                >
+              </div>
+            </div>
+            <div class="card contact__placeholders">
+              <p class="contact__ph-title" data-i18n="contact.phTitle">Coming soon</p>
+              <div class="contact__ph-grid">
+                <div class="contact__ph">
+                  <span class="contact__ph-label" data-i18n="contact.phCal">Calendly</span>
+                  <span class="contact__ph-note" data-i18n="contact.phCalNote">Placeholder — add your scheduling link</span>
+                </div>
+                <div class="contact__ph">
+                  <span class="contact__ph-label" data-i18n="contact.phWx">WeChat QR</span>
+                  <span class="contact__ph-note" data-i18n="contact.phWxNote">Placeholder — add QR image in /assets</span>
+                </div>
+                <div class="contact__ph">
+                  <span class="contact__ph-label" data-i18n="contact.phDemo">Demo pages</span>
+                  <span class="contact__ph-note" data-i18n="contact.phDemoNote">Placeholder — link Case Study / Demo URLs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__brand">BoniStudio</p>
+        <p class="footer__copy" data-i18n="footer.copy">© BoniStudio. AI Automation Studio.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
