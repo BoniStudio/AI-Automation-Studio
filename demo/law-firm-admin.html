@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.titleAdmin">Law Firm Admin Preview | BoniStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="law-firm-demo.css" />
+  </head>
+  <body class="lfd-page">
+    <header class="lfd-header">
+      <div class="lfd-header__inner">
+        <a class="lfd-brand" href="law-firm-intake.html">
+          <span class="lfd-brand__name" data-i18n="admin.navBrand">Law Firm Admin Preview</span>
+          <span class="lfd-brand__tag" data-i18n="admin.navTag">AI Intake System</span>
+        </a>
+        <button type="button" class="lfd-menu-toggle" id="lfdMenuToggle" aria-expanded="false" aria-controls="lfdNav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="lfd-nav" id="lfdNav">
+          <a class="lfd-nav__link" href="law-firm-intake.html" data-i18n="nav.intake">Back to Intake Demo</a>
+          <a class="lfd-nav__link" href="../index.html" data-i18n="nav.home">Back to Home</a>
+          <button type="button" class="lfd-lang" id="lfdLangToggle">中文</button>
+        </nav>
+      </div>
+    </header>
+
+    <div id="lfd-admin-root">
+      <section class="lfd-section lfd-container">
+        <h1 class="lfd-h1" data-i18n="admin.hero.title">Organized client information…</h1>
+        <p class="lfd-lead" data-i18n="admin.hero.sub">Every intake becomes…</p>
+      </section>
+
+      <section class="lfd-section lfd-container--wide" style="padding-top: 0">
+        <div class="lfd-stats">
+          <div class="lfd-stat">
+            <div class="lfd-stat__val" id="lfd-stat-new">0</div>
+            <div class="lfd-stat__label" data-i18n="dash.s1">New Intakes</div>
+          </div>
+          <div class="lfd-stat">
+            <div class="lfd-stat__val" id="lfd-stat-hi">0</div>
+            <div class="lfd-stat__label" data-i18n="dash.s2">High Priority</div>
+          </div>
+          <div class="lfd-stat">
+            <div class="lfd-stat__val" id="lfd-stat-miss">0</div>
+            <div class="lfd-stat__label" data-i18n="dash.s3">Missing Documents</div>
+          </div>
+          <div class="lfd-stat">
+            <div class="lfd-stat__val" id="lfd-stat-ready">0</div>
+            <div class="lfd-stat__label" data-i18n="dash.s4">Ready for Consultation</div>
+          </div>
+        </div>
+
+        <p class="lfd-strip" data-i18n="strip">Client submits → …</p>
+
+        <div class="lfd-leads" id="lfd-leads"></div>
+      </section>
+    </div>
+
+    <div class="lfd-overlay" id="lfd-overlay" aria-hidden="true"></div>
+    <aside class="lfd-panel" id="lfd-panel" aria-hidden="true">
+      <div class="lfd-panel__head">
+        <h2 class="lfd-h2" style="margin: 0; font-size: 1.25rem" id="lfd-panel-title">—</h2>
+        <button type="button" class="lfd-panel__close" id="lfd-panel-close" aria-label="Close">×</button>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.info">Client Information</h4>
+        <p id="lfd-p-info"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.contact">Contact Method</h4>
+        <p id="lfd-p-contact"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.area">Practice Area</h4>
+        <p id="lfd-p-area"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.urgency">Urgency</h4>
+        <p id="lfd-p-urgency"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.ai">AI Summary</h4>
+        <p id="lfd-p-ai" style="white-space: pre-wrap"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.dates">Important Dates</h4>
+        <p id="lfd-p-dates"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.docs">Available Documents</h4>
+        <p id="lfd-p-docs" style="white-space: pre-wrap"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.missing">Missing Information</h4>
+        <p id="lfd-p-missing" style="white-space: pre-wrap"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.rec">Recommended Follow-up</h4>
+        <p id="lfd-p-rec"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.notes">Internal Notes</h4>
+        <p id="lfd-p-notes"></p>
+      </div>
+      <div class="lfd-panel__actions">
+        <button type="button" class="lfd-btn lfd-btn--secondary" data-lfd-action="1" data-i18n="act.reviewed">Mark as Reviewed</button>
+        <button type="button" class="lfd-btn lfd-btn--secondary" data-lfd-action="1" data-i18n="act.request">Request Documents</button>
+        <button type="button" class="lfd-btn lfd-btn--secondary" data-lfd-action="1" data-i18n="act.schedule">Schedule Consultation</button>
+        <button type="button" class="lfd-btn lfd-btn--primary" data-lfd-action="1" data-i18n="act.email">Send Follow-up Email</button>
+      </div>
+    </aside>
+
+    <div class="lfd-toast" id="lfd-toast" role="status"></div>
+
+    <p class="lfd-footer-note" data-i18n="foot.disclaimer">This is a workflow demo…</p>
+    <script src="law-firm-demo.js"></script>
+  </body>
+</html>

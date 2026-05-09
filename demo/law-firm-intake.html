@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.titleIntake">Law Firm AI Intake System | BoniStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="law-firm-demo.css" />
+  </head>
+  <body class="lfd-page">
+    <header class="lfd-header">
+      <div class="lfd-header__inner">
+        <a class="lfd-brand" href="../index.html">
+          <span class="lfd-brand__name" data-i18n="nav.brand">BoniStudio</span>
+          <span class="lfd-brand__tag" data-i18n="nav.tag">Law Firm AI Intake</span>
+        </a>
+        <button type="button" class="lfd-menu-toggle" id="lfdMenuToggle" aria-expanded="false" aria-controls="lfdNav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="lfd-nav" id="lfdNav">
+          <a class="lfd-nav__link" href="../index.html" data-i18n="nav.home">Back to Home</a>
+          <a class="lfd-nav__link" href="law-firm-admin.html" data-i18n="nav.admin">Admin Preview</a>
+          <a class="lfd-nav__link" href="mailto:bonistudio.core@gmail.com" data-i18n="nav.contact">Contact Us</a>
+          <button type="button" class="lfd-lang" id="lfdLangToggle">中文</button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="lfd-hero">
+      <div class="lfd-hero__copy">
+        <p class="lfd-eyebrow" data-i18n="hero.eyebrow">AI-enhanced intake for modern law firms</p>
+        <h1 class="lfd-h1" data-i18n="hero.title">AI Intake Workflow for Modern Law Firms</h1>
+        <p class="lfd-lead" data-i18n="hero.sub">A bilingual intake system…</p>
+        <div class="lfd-actions">
+          <a class="lfd-btn lfd-btn--primary" href="#intake-form" data-i18n="hero.cta1">Try Intake Demo</a>
+          <a class="lfd-btn lfd-btn--secondary" href="law-firm-admin.html" data-i18n="hero.cta2">View Admin Preview</a>
+        </div>
+        <p class="lfd-trust" data-i18n="hero.trust">Designed for immigration…</p>
+      </div>
+      <div class="lfd-hero__visual" aria-hidden="true">
+        <div class="lfd-flow">
+          <div class="lfd-flow__row">
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.c">Client</span>
+            <span class="lfd-flow__arrow">↓</span>
+          </div>
+          <div class="lfd-flow__row">
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.f">Intake Form</span>
+            <span class="lfd-flow__arrow">↓</span>
+          </div>
+          <div class="lfd-flow__row">
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.a">AI Summary</span>
+            <span class="lfd-flow__arrow">↓</span>
+          </div>
+          <div class="lfd-flow__row">
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.r">Attorney Review</span>
+            <span class="lfd-flow__arrow">↓</span>
+          </div>
+          <div class="lfd-flow__row">
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.x">Consultation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lfd-section lfd-container">
+      <h2 class="lfd-h2" data-i18n="why.title">The problem is not just an outdated website.</h2>
+      <p class="lfd-lead" data-i18n="why.lead">Many small law firms…</p>
+      <div class="lfd-grid lfd-grid--3">
+        <div class="lfd-card"><p data-i18n="why.p1">Calls, emails, and messages…</p></div>
+        <div class="lfd-card"><p data-i18n="why.p2">Staff repeatedly…</p></div>
+        <div class="lfd-card"><p data-i18n="why.p3">Important dates…</p></div>
+        <div class="lfd-card"><p data-i18n="why.p4">Bilingual clients…</p></div>
+        <div class="lfd-card"><p data-i18n="why.p5">Attorneys spend time…</p></div>
+        <div class="lfd-card"><p data-i18n="why.p6">Old websites…</p></div>
+      </div>
+    </section>
+
+    <section class="lfd-section lfd-container">
+      <h2 class="lfd-h2" data-i18n="how.title">How It Works</h2>
+      <ol class="lfd-steps">
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="how.s1t">Client starts intake</h3>
+            <p data-i18n="how.s1d">The client or staff member…</p>
+          </div>
+        </li>
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="how.s2t">Information is collected</h3>
+            <p data-i18n="how.s2d">The form collects…</p>
+          </div>
+        </li>
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="how.s3t">AI organizes the summary</h3>
+            <p data-i18n="how.s3d">AI turns the intake…</p>
+          </div>
+        </li>
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="how.s4t">Attorney reviews and follows up</h3>
+            <p data-i18n="how.s4d">The attorney or staff…</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="lfd-section lfd-container" id="intake-form">
+      <h2 class="lfd-h2" data-i18n="form.title">Try the law firm intake workflow</h2>
+      <form class="lfd-form-wrap" id="lfd-intake-form">
+        <div class="lfd-field">
+          <label for="lfd-filler" data-i18n="form.filler">Who is filling this form?</label>
+          <select id="lfd-filler" name="filler" required>
+            <option value="client" data-i18n="form.opt.client">Client</option>
+            <option value="assistant" data-i18n="form.opt.assistant">Staff member</option>
+            <option value="family" data-i18n="form.opt.family">Family member / representative</option>
+          </select>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-name" data-i18n="form.name">Client name</label>
+          <input type="text" id="lfd-name" name="name" required autocomplete="name" />
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-lang" data-i18n="form.lang">Preferred language</label>
+          <select id="lfd-lang" name="lang" required>
+            <option value="english" data-i18n="form.lang.en">English</option>
+            <option value="chinese" data-i18n="form.lang.zh">Chinese</option>
+            <option value="bilingual" data-i18n="form.lang.bi">Bilingual</option>
+          </select>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-contact" data-i18n="form.contact">Contact method</label>
+          <select id="lfd-contact" name="contact" required>
+            <option value="phone" data-i18n="form.cm.phone">Phone</option>
+            <option value="email" data-i18n="form.cm.email">Email</option>
+            <option value="sms" data-i18n="form.cm.sms">SMS</option>
+            <option value="wechat" data-i18n="form.cm.wechat">WeChat</option>
+          </select>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-contact-detail" data-i18n="form.contactDetail">Phone / email / WeChat ID (if applicable)</label>
+          <input type="text" id="lfd-contact-detail" name="contactDetail" required autocomplete="tel" />
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-area" data-i18n="form.area">Practice area</label>
+          <select id="lfd-area" name="area" required>
+            <option value="immigration" data-i18n="form.ar.immigration">Immigration</option>
+            <option value="family" data-i18n="form.ar.family">Family / Divorce</option>
+            <option value="realestate" data-i18n="form.ar.realestate">Real Estate</option>
+            <option value="business" data-i18n="form.ar.business">Business</option>
+            <option value="injury" data-i18n="form.ar.injury">Personal Injury</option>
+            <option value="estate" data-i18n="form.ar.estate">Estate Planning</option>
+            <option value="other" data-i18n="form.ar.other">Other</option>
+          </select>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-urgency" data-i18n="form.urgency">Urgency level</label>
+          <select id="lfd-urgency" name="urgency" required>
+            <option value="low" data-i18n="form.ug.low">Low</option>
+            <option value="medium" data-i18n="form.ug.med">Medium</option>
+            <option value="high" data-i18n="form.ug.high">High</option>
+            <option value="urgent" data-i18n="form.ug.urgent">Urgent</option>
+          </select>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-situation" data-i18n="form.situation">Situation description</label>
+          <textarea id="lfd-situation" name="situation" required data-i18n-placeholder="form.situation.ph"></textarea>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-dates" data-i18n="form.dates">Important dates</label>
+          <input type="text" id="lfd-dates" name="dates" data-i18n-placeholder="form.dates.ph" />
+        </div>
+        <div class="lfd-field">
+          <span class="lfd-label" data-i18n="form.docs">Available documents</span>
+          <div class="lfd-checks">
+            <label class="lfd-check"><input type="checkbox" name="docs" value="passport" /> <span data-i18n="form.doc.passport">Passport / ID</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="uscis" /> <span data-i18n="form.doc.uscis">USCIS notice</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="court" /> <span data-i18n="form.doc.court">Court document</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="contract" /> <span data-i18n="form.doc.contract">Contract</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="police" /> <span data-i18n="form.doc.police">Police report</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="medical" /> <span data-i18n="form.doc.medical">Medical record</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="marriage" /> <span data-i18n="form.doc.marriage">Marriage certificate</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="tax" /> <span data-i18n="form.doc.tax">Tax / financial document</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="photos" /> <span data-i18n="form.doc.photos">Photos / evidence</span></label>
+            <label class="lfd-check"><input type="checkbox" name="docs" value="unsure" /> <span data-i18n="form.doc.unsure">Not sure</span></label>
+          </div>
+        </div>
+        <div class="lfd-field">
+          <label for="lfd-next" data-i18n="form.next">Preferred next step</label>
+          <select id="lfd-next" name="next" required>
+            <option value="phone" data-i18n="form.nx.phone">Phone consultation</option>
+            <option value="video" data-i18n="form.nx.video">Video consultation</option>
+            <option value="inperson" data-i18n="form.nx.inperson">In-person meeting</option>
+            <option value="email" data-i18n="form.nx.email">Email follow-up</option>
+            <option value="unsure" data-i18n="form.nx.unsure">Not sure</option>
+          </select>
+        </div>
+        <button type="submit" class="lfd-btn lfd-btn--primary" data-i18n="form.submit">Generate Intake Summary</button>
+      </form>
+
+      <div class="lfd-summary" id="lfd-summary">
+        <h3 class="lfd-summary__title" data-i18n="sum.title">AI-organized intake summary</h3>
+        <div class="lfd-summary__body" id="lfd-summary-body"></div>
+        <p class="lfd-disclaimer" data-i18n="sum.disclaimer">This demo does not provide legal advice…</p>
+        <div class="lfd-after-actions">
+          <a class="lfd-btn lfd-btn--secondary" href="law-firm-admin.html" data-i18n="after.admin">View Admin Preview</a>
+          <a
+            class="lfd-btn lfd-btn--primary"
+            href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry"
+            data-i18n="after.email"
+            >Email BoniStudio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="lfd-section lfd-container">
+      <h2 class="lfd-h2" data-i18n="opt.title">Two ways to use this system</h2>
+      <div class="lfd-options">
+        <div class="lfd-option-card">
+          <h3 data-i18n="opt.at">Option A</h3>
+          <p class="lfd-lead" style="margin-bottom: 0.75rem" data-i18n="opt.ad">Best for law firms…</p>
+          <ul>
+            <li data-i18n="opt.ali1">Modern law firm website</li>
+            <li data-i18n="opt.ali2">Mobile-first experience</li>
+            <li data-i18n="opt.ali3">Bilingual pages</li>
+            <li data-i18n="opt.ali4">Practice area pages</li>
+            <li data-i18n="opt.ali5">Attorney profile section</li>
+            <li data-i18n="opt.ali6">AI intake workflow</li>
+            <li data-i18n="opt.ali7">Contact / booking flow</li>
+            <li data-i18n="opt.ali8">Basic SEO setup</li>
+            <li data-i18n="opt.ali9">Launch support</li>
+          </ul>
+          <a
+            class="lfd-btn lfd-btn--primary"
+            style="margin-top: 1rem"
+            href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry"
+            data-i18n="opt.acta"
+            >Request Website Upgrade</a
+          >
+        </div>
+        <div class="lfd-option-card">
+          <h3 data-i18n="opt.bt">Option B</h3>
+          <p class="lfd-lead" style="margin-bottom: 0.75rem" data-i18n="opt.bd">Best for law firms…</p>
+          <ul>
+            <li data-i18n="opt.bli1">Intake form module</li>
+            <li data-i18n="opt.bli2">AI summary generation</li>
+            <li data-i18n="opt.bli3">Admin preview</li>
+            <li data-i18n="opt.bli4">Email notification workflow</li>
+            <li data-i18n="opt.bli5">Document checklist</li>
+            <li data-i18n="opt.bli6">Website embed support</li>
+            <li data-i18n="opt.bli7">Minimal disruption</li>
+          </ul>
+          <a
+            class="lfd-btn lfd-btn--secondary"
+            style="margin-top: 1rem"
+            href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry"
+            data-i18n="opt.bcta"
+            >Request AI Intake Add-on</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="lfd-section lfd-container">
+      <h2 class="lfd-h2" data-i18n="risk.title">This is not an AI lawyer.</h2>
+      <p class="lfd-lead" data-i18n="risk.body">The system does not answer…</p>
+    </section>
+
+    <section class="lfd-section lfd-container lfd-section--tight">
+      <h2 class="lfd-h2" data-i18n="final.title">Want to see how this could work…</h2>
+      <p class="lfd-lead" data-i18n="final.sub">Send us your current website…</p>
+      <a class="lfd-btn lfd-btn--primary" href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry" data-i18n="final.cta">Email BoniStudio</a>
+    </section>
+
+    <p class="lfd-footer-note" data-i18n="foot.disclaimer">This is a workflow demo…</p>
+    <script src="law-firm-demo.js"></script>
+  </body>
+</html>
