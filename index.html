@@ -24,6 +24,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__mesh"></div>
+      <div class="ambient__grid"></div>
+      <div class="ambient__flow ambient__flow--1"></div>
+      <div class="ambient__flow ambient__flow--2"></div>
+      <div class="ambient__nodes">
+        <span class="ambient__node"></span>
+        <span class="ambient__node"></span>
+        <span class="ambient__node"></span>
+      </div>
+    </div>
     <header class="header" id="header">
       <div class="header__inner container">
         <a class="brand" href="#top" aria-label="BoniStudio home">
@@ -76,36 +87,109 @@
             <p class="hero__trust" data-i18n="hero.trust">Bilingual. AI-first. Built fast. Designed for real business use.</p>
           </div>
           <div class="hero__visual reveal reveal--delay" aria-hidden="true">
-            <div class="mockup">
-              <div class="mockup__chrome">
-                <span class="mockup__dot"></span>
-                <span class="mockup__dot"></span>
-                <span class="mockup__dot"></span>
-                <span class="mockup__title" data-i18n="mock.windowTitle">BoniStudio / Live</span>
+            <div class="hero__visual-stack">
+              <div class="system-graph">
+                <svg class="system-graph__svg" viewBox="0 0 420 108" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path
+                    class="system-graph__path"
+                    d="M 28 58 H 92 H 156 V 28 H 220 H 284 V 58 H 348 H 392"
+                    stroke="rgba(115,165,215,0.22)"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="system-graph__path system-graph__path--alt"
+                    d="M 156 58 V 86 H 268"
+                    stroke="rgba(130,118,195,0.2)"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                  />
+                  <circle r="2.5" fill="rgba(130,200,245,0.9)">
+                    <animateMotion
+                      dur="16s"
+                      repeatCount="indefinite"
+                      path="M 28 58 H 92 H 156 V 28 H 220 H 284 V 58 H 348 H 392"
+                    />
+                  </circle>
+                  <circle r="2" fill="rgba(175,155,235,0.85)">
+                    <animateMotion dur="10s" repeatCount="indefinite" path="M 156 58 V 86 H 268" />
+                  </circle>
+                </svg>
+                <div class="system-graph__labels">
+                  <span data-i18n="graph.inquiry">Inquiry</span>
+                  <span data-i18n="graph.intake">AI Intake</span>
+                  <span data-i18n="graph.summary">Summary</span>
+                  <span data-i18n="graph.reply">Reply</span>
+                  <span data-i18n="graph.booking">Booking</span>
+                  <span data-i18n="graph.crm">CRM / Email</span>
+                </div>
               </div>
-              <div class="mockup__body">
-                <div class="mockup__card mockup__card--wide">
-                  <span class="mockup__label" data-i18n="mock.aiIntake">AI Intake</span>
-                  <span class="mockup__pill" data-i18n="mock.live">Live</span>
+              <div class="mockup mockup--premium">
+                <div class="mockup__chrome">
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__title" data-i18n="mock.windowTitle">BoniStudio / Live</span>
                 </div>
-                <div class="mockup__row">
-                  <div class="mockup__card">
-                    <span class="mockup__k" data-i18n="mock.leadCaptured">Lead Captured</span>
-                    <span class="mockup__v">+1</span>
-                  </div>
-                  <div class="mockup__card">
-                    <span class="mockup__k" data-i18n="mock.autoReply">Auto Reply</span>
-                    <span class="mockup__status mockup__status--ok" data-i18n="mock.sent">Sent</span>
-                  </div>
+                <div class="mockup__statusbar">
+                  <span class="mockup__statusbar-left" data-i18n="mock.ops">Operations console</span>
+                  <span class="mockup__health">
+                    <span class="mockup__health-led" aria-hidden="true"></span>
+                    <span data-i18n="mock.health">Systems nominal</span>
+                  </span>
+                  <span class="mockup__statusbar-right" data-i18n="mock.synced">Synced</span>
                 </div>
-                <div class="mockup__row">
-                  <div class="mockup__card">
-                    <span class="mockup__k" data-i18n="mock.bookingConfirmed">Booking Confirmed</span>
-                    <span class="mockup__v">14:30</span>
+                <div class="mockup__progress" role="presentation">
+                  <span class="mockup__progress-bar"></span>
+                </div>
+                <div class="mockup__body">
+                  <div class="mockup__scan" aria-hidden="true">
+                    <span class="mockup__scan-line"></span>
                   </div>
-                  <div class="mockup__card">
-                    <span class="mockup__k" data-i18n="mock.workflowActive">Workflow Active</span>
-                    <span class="mockup__pulse"></span>
+                  <div class="mockup__chips">
+                    <span class="mockup__chip" data-i18n="mock.chip1">Intake received</span>
+                    <span class="mockup__chip" data-i18n="mock.chip2">Lead qualified</span>
+                    <span class="mockup__chip" data-i18n="mock.chip3">Summary sent</span>
+                    <span class="mockup__chip" data-i18n="mock.chip4">Follow-up scheduled</span>
+                  </div>
+                  <div class="mockup__events">
+                    <div class="mockup__event">
+                      <span class="mockup__event-led"></span>
+                      <span data-i18n="mock.ev1">Workflow run #2841 · completed</span>
+                    </div>
+                    <div class="mockup__event">
+                      <span class="mockup__event-led mockup__event-led--dim"></span>
+                      <span data-i18n="mock.ev2">Bilingual summary dispatched</span>
+                    </div>
+                    <div class="mockup__event">
+                      <span class="mockup__event-led mockup__event-led--dim"></span>
+                      <span data-i18n="mock.ev3">Calendar bridge · idle</span>
+                    </div>
+                  </div>
+                  <div class="mockup__card mockup__card--wide">
+                    <span class="mockup__label" data-i18n="mock.aiIntake">AI Intake</span>
+                    <span class="mockup__pill" data-i18n="mock.live">Live</span>
+                  </div>
+                  <div class="mockup__row">
+                    <div class="mockup__card">
+                      <span class="mockup__k" data-i18n="mock.leadCaptured">Lead Captured</span>
+                      <span class="mockup__v">+1</span>
+                    </div>
+                    <div class="mockup__card">
+                      <span class="mockup__k" data-i18n="mock.autoReply">Auto Reply</span>
+                      <span class="mockup__status mockup__status--ok" data-i18n="mock.sent">Sent</span>
+                    </div>
+                  </div>
+                  <div class="mockup__row">
+                    <div class="mockup__card">
+                      <span class="mockup__k" data-i18n="mock.bookingConfirmed">Booking Confirmed</span>
+                      <span class="mockup__v">14:30</span>
+                    </div>
+                    <div class="mockup__card">
+                      <span class="mockup__k" data-i18n="mock.workflowActive">Workflow Active</span>
+                      <span class="mockup__pulse"></span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -113,6 +197,11 @@
           </div>
         </div>
       </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
 
       <section class="section problem" id="problem">
         <div class="container">
@@ -129,6 +218,11 @@
           </div>
         </div>
       </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
 
       <section class="section services" id="services">
         <div class="container">
@@ -162,6 +256,11 @@
         </div>
       </section>
 
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
+
       <section class="section systems" id="systems">
         <div class="container">
           <h2 class="section__title reveal" data-i18n="systems.title">Example systems</h2>
@@ -170,6 +269,16 @@
           </p>
           <div class="grid grid--3">
             <article class="card card--system reveal">
+              <div class="card__icon" aria-hidden="true">
+                <svg class="card__icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path d="M12 14h20v22H12V14z" stroke="currentColor" stroke-width="1.2" opacity="0.5" />
+                  <path d="M16 18h12M16 24h8" stroke="currentColor" stroke-width="1" opacity="0.35" />
+                  <circle cx="34" cy="12" r="3" stroke="currentColor" stroke-width="1" opacity="0.45" />
+                  <path d="M34 15v6M31 21h6" stroke="currentColor" stroke-width="0.9" opacity="0.4" />
+                  <circle cx="22" cy="34" r="2" fill="currentColor" opacity="0.25" />
+                  <path d="M26 34h10M30 30v8" stroke="currentColor" stroke-width="0.9" opacity="0.35" />
+                </svg>
+              </div>
               <h3 class="card__title" data-i18n="systems.law.title">Law Firm AI Intake System</h3>
               <ul class="card__list">
                 <li data-i18n="systems.law.f1">AI consultation intake</li>
@@ -182,6 +291,15 @@
               <a class="btn btn--secondary btn--full" href="#contact" data-i18n="systems.viewDemo">View Demo</a>
             </article>
             <article class="card card--system reveal">
+              <div class="card__icon" aria-hidden="true">
+                <svg class="card__icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <rect x="10" y="12" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.2" opacity="0.45" />
+                  <path d="M14 26v6h16v-6" stroke="currentColor" stroke-width="1" opacity="0.35" />
+                  <path d="M32 18h8l-3 4h-5v-4z" stroke="currentColor" stroke-width="1" opacity="0.4" />
+                  <path d="M18 34c4-6 10-6 14 0" stroke="currentColor" stroke-width="1" opacity="0.3" />
+                  <circle cx="25" cy="30" r="1.5" fill="currentColor" opacity="0.35" />
+                </svg>
+              </div>
               <h3 class="card__title" data-i18n="systems.realtor.title">Realtor Lead System</h3>
               <ul class="card__list">
                 <li data-i18n="systems.realtor.f1">Listing landing pages</li>
@@ -193,6 +311,15 @@
               <a class="btn btn--secondary btn--full" href="#contact" data-i18n="systems.viewDemo">View Demo</a>
             </article>
             <article class="card card--system reveal">
+              <div class="card__icon" aria-hidden="true">
+                <svg class="card__icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <rect x="12" y="10" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.2" opacity="0.4" />
+                  <circle cx="18" cy="32" r="2.5" stroke="currentColor" stroke-width="1" opacity="0.35" />
+                  <circle cx="30" cy="32" r="2.5" stroke="currentColor" stroke-width="1" opacity="0.35" />
+                  <path d="M20 32h8M24 28v8" stroke="currentColor" stroke-width="0.9" opacity="0.3" />
+                  <path d="M16 18h16M16 22h10" stroke="currentColor" stroke-width="0.85" opacity="0.28" />
+                </svg>
+              </div>
               <h3 class="card__title" data-i18n="systems.creator.title">Creator Automation System</h3>
               <ul class="card__list">
                 <li data-i18n="systems.creator.f1">Digital product landing page</li>
@@ -206,6 +333,11 @@
           </div>
         </div>
       </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
 
       <section class="section process" id="process">
         <div class="container">
@@ -243,6 +375,11 @@
         </div>
       </section>
 
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
+
       <section class="section why" id="why">
         <div class="container">
           <h2 class="section__title reveal" data-i18n="why.title">Why work with us</h2>
@@ -258,6 +395,11 @@
           </ul>
         </div>
       </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
 
       <section class="section contact" id="contact">
         <div class="container">

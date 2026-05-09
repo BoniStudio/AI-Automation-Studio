@@ -36,6 +36,23 @@
       "mock.sent": "Sent",
       "mock.bookingConfirmed": "Booking Confirmed",
       "mock.workflowActive": "Workflow Active",
+      "mock.ops": "Operations console",
+      "mock.health": "Systems nominal",
+      "mock.synced": "Synced",
+      "mock.chip1": "Intake received",
+      "mock.chip2": "Lead qualified",
+      "mock.chip3": "Summary sent",
+      "mock.chip4": "Follow-up scheduled",
+      "mock.ev1": "Workflow run #2841 · completed",
+      "mock.ev2": "Bilingual summary dispatched",
+      "mock.ev3": "Calendar bridge · idle",
+
+      "graph.inquiry": "Inquiry",
+      "graph.intake": "AI Intake",
+      "graph.summary": "Summary",
+      "graph.reply": "Reply",
+      "graph.booking": "Booking",
+      "graph.crm": "CRM / Email",
 
       "problem.title": "Your business should not lose leads because of outdated systems.",
       "problem.p1": "Outdated website experience",
@@ -147,6 +164,23 @@
       "mock.sent": "已发送",
       "mock.bookingConfirmed": "预约已确认",
       "mock.workflowActive": "工作流进行中",
+      "mock.ops": "运营控制台",
+      "mock.health": "系统正常",
+      "mock.synced": "已同步",
+      "mock.chip1": "咨询已接收",
+      "mock.chip2": "线索已筛选",
+      "mock.chip3": "摘要已发送",
+      "mock.chip4": "跟进已排期",
+      "mock.ev1": "工作流 #2841 · 已完成",
+      "mock.ev2": "双语摘要已发出",
+      "mock.ev3": "日历桥接 · 空闲",
+
+      "graph.inquiry": "客户咨询",
+      "graph.intake": "AI 收集",
+      "graph.summary": "摘要",
+      "graph.reply": "自动回复",
+      "graph.booking": "预约",
+      "graph.crm": "CRM / 邮件",
 
       "problem.title": "你的业务不应该因为系统落后而流失客户。",
       "problem.p1": "网站体验过时",
@@ -404,6 +438,16 @@
     });
   }
 
+  function initReducedMotion() {
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.documentElement.classList.add("reduce-motion");
+    document.querySelectorAll("svg *").forEach(function (el) {
+      var n = el.tagName.toLowerCase();
+      if (n === "animatemotion" || n === "animate") el.remove();
+    });
+  }
+
+  initReducedMotion();
   var initial = getStoredLang() || DEFAULT_LANG;
   applyLanguage(initial);
   initHeaderScroll();
