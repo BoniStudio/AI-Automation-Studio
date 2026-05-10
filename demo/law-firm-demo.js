@@ -179,6 +179,47 @@
       "chat.afterAdmin": "View Admin Preview",
       "chat.afterEmail": "Email BoniStudio",
 
+      "voice.badge": "Premium",
+      "voice.ctaTitle": "Voice Intake",
+      "voice.ctaDesc":
+        "Speak naturally in English or Chinese. The system will transcribe your message and organize it into the intake brief.",
+      "voice.langLabel": "Voice Language",
+      "voice.idle": "Start Voice Intake",
+      "voice.recording": "Recording… Click to stop",
+      "voice.processing": "Processing transcript…",
+      "voice.done": "Transcript added to intake",
+      "voice.transcriptTitle": "Voice Transcript",
+      "voice.addToChat": "Add to Chat",
+      "voice.clearTranscript": "Clear Transcript",
+      "voice.safetyDisclaimer":
+        "Do not submit real sensitive information in this public demo. Production voice intake requires secure storage and authenticated dashboard access.",
+      "voice.unsupportedInline":
+        "Voice input is not available in this browser. You can still use text intake.",
+      "voice.unsupportedDetail":
+        "Voice input is not supported in this browser. Please use Chrome, Edge, or type your message instead.",
+      "voice.err.notAllowed": "Microphone permission denied. Allow access or use text.",
+      "voice.err.noSpeech": "No speech detected. Try again or speak closer to the mic.",
+      "voice.err.network": "Network error during recognition. Check your connection.",
+      "voice.err.aborted": "Recognition stopped. Tap the mic to try again.",
+      "voice.err.generic": "Voice recognition error. Try again or use text.",
+
+      "live.inputSource": "Input Source",
+      "live.voiceTranscript": "Voice Transcript",
+      "live.source.text": "Text Chat",
+      "live.source.voiceChat": "Voice + Chat",
+      "live.source.voiceOnly": "Voice Intake",
+
+      "brief.intakeSource.voiceChat": "Intake Source: Voice + Chat Intake",
+      "brief.intakeSource.voiceOnly": "Intake Source: Voice Intake",
+      "brief.voiceBlockTitle": "Voice Transcript",
+
+      "admin.emailSourceText": "Source: Text Chat",
+      "admin.emailSourceVoiceChat": "Source: Voice + Chat Intake",
+      "admin.emailSourceVoiceOnly": "Source: Voice Intake",
+      "admin.voiceBadge": "Voice Intake",
+      "panel.voiceTranscript": "Voice Transcript",
+      "lead.badgeVoice": "Voice Intake",
+
       "product.name": "Law Firm AI Intake System",
       "product.tagline":
         "AI chat intake, structured attorney briefs, secure dashboard review, and customizable question sets for modern law firms.",
@@ -233,11 +274,14 @@
       "pkg.p2i6": "Document checklist",
       "pkg.p2i7": "Bilingual summary",
       "pkg.p3t": "Complete Firm Automation System",
-      "pkg.p3d": "For firms that want a full modern website plus AI intake workflow.",
+      "pkg.p3d": "For firms that want a full modern website plus AI intake workflow. Starting at $4,500+ typical projects.",
       "pkg.p3i1": "Everything in Website Modernization and AI Intake Add-on",
       "pkg.p3i2": "Custom practice area setup",
       "pkg.p3i3": "Intake flow customization",
       "pkg.p3i4": "Launch support",
+      "pkg.p3v1": "Voice intake input",
+      "pkg.p3v2": "English / Chinese speech recognition",
+      "pkg.p3v3": "Transcript-to-brief workflow",
       "pkg.p3i5": "Monthly maintenance option",
       "pkg.cta": "Request This Option",
       "pkg.pay500": "Pay $500 Deposit",
@@ -588,6 +632,46 @@
       "chat.afterAdmin": "查看后台预览",
       "chat.afterEmail": "邮件联系 BoniStudio",
 
+      "voice.badge": "高级",
+      "voice.ctaTitle": "语音咨询输入",
+      "voice.ctaDesc":
+        "你可以用英文或中文自然描述情况。系统会将语音转写成文字，并整理进咨询简报。",
+      "voice.langLabel": "语音语言",
+      "voice.idle": "开始语音输入",
+      "voice.recording": "正在录音… 点击结束",
+      "voice.processing": "正在整理转写内容…",
+      "voice.done": "语音内容已加入咨询",
+      "voice.transcriptTitle": "语音转写内容",
+      "voice.addToChat": "加入对话",
+      "voice.clearTranscript": "清空转写",
+      "voice.safetyDisclaimer":
+        "请勿在公开 Demo 中提交真实敏感信息。正式版本的语音咨询需要安全存储与登录后台访问。",
+      "voice.unsupportedInline": "当前浏览器无法使用语音输入。你仍然可以使用文字咨询。",
+      "voice.unsupportedDetail":
+        "当前浏览器不支持语音输入。请使用 Chrome、Edge，或直接输入文字。",
+      "voice.err.notAllowed": "麦克风权限被拒绝。请允许访问或使用文字输入。",
+      "voice.err.noSpeech": "未检测到语音。请重试或靠近麦克风说话。",
+      "voice.err.network": "识别时网络出错，请检查连接。",
+      "voice.err.aborted": "识别已中断。可再次点击麦克风重试。",
+      "voice.err.generic": "语音识别出错。请重试或使用文字。",
+
+      "live.inputSource": "输入来源",
+      "live.voiceTranscript": "语音转写",
+      "live.source.text": "文字对话",
+      "live.source.voiceChat": "语音 + 对话",
+      "live.source.voiceOnly": "语音咨询",
+
+      "brief.intakeSource.voiceChat": "咨询来源：语音 + 聊天咨询",
+      "brief.intakeSource.voiceOnly": "咨询来源：语音咨询",
+      "brief.voiceBlockTitle": "语音转写",
+
+      "admin.emailSourceText": "来源：文字对话",
+      "admin.emailSourceVoiceChat": "来源：语音 + 聊天咨询",
+      "admin.emailSourceVoiceOnly": "来源：语音咨询",
+      "admin.voiceBadge": "语音咨询",
+      "panel.voiceTranscript": "语音转写内容",
+      "lead.badgeVoice": "语音咨询",
+
       "product.name": "律师事务所 AI 咨询系统",
       "product.tagline":
         "为现代律师事务所提供 AI 聊天式咨询收集、结构化律师简报、安全后台查看与可定制问题流程。",
@@ -640,11 +724,14 @@
       "pkg.p2i6": "文件清单",
       "pkg.p2i7": "中英双语摘要",
       "pkg.p3t": "完整律所自动化系统",
-      "pkg.p3d": "适合希望同时升级官网与 AI 咨询流程的律师事务所。",
+      "pkg.p3d": "适合希望同时升级官网与 AI 咨询流程的律师事务所。常见项目起价 $4,500+。",
       "pkg.p3i1": "包含官网现代化与 AI 咨询模块的全部内容",
       "pkg.p3i2": "自定义法律服务领域配置",
       "pkg.p3i3": "咨询流程定制",
       "pkg.p3i4": "上线支持",
+      "pkg.p3v1": "语音咨询输入",
+      "pkg.p3v2": "中文 / 英文语音识别",
+      "pkg.p3v3": "语音转写到律师简报流程",
       "pkg.p3i5": "可选月度维护",
       "pkg.cta": "咨询此方案",
       "pkg.pay500": "支付 $500 定金",
@@ -933,6 +1020,7 @@
     window.__lfdLang = lang;
     if (typeof window.__lfdOnLangChange === "function") window.__lfdOnLangChange(lang);
     if (typeof window.__lfdRefreshChatChrome === "function") window.__lfdRefreshChatChrome(lang);
+    if (typeof window.__lfdVoiceOnLangChange === "function") window.__lfdVoiceOnLangChange();
   }
 
   function mapKey(lang, prefix, value) {
@@ -1039,6 +1127,18 @@
       .join(", ");
   }
 
+  function getLiveInputSourceLabel(lang, c) {
+    if (!c.voiceUsed) return t(lang, "live.source.text");
+    if (c.hadNonVoiceTurn) return t(lang, "live.source.voiceChat");
+    return t(lang, "live.source.voiceOnly");
+  }
+
+  function getFormInputSource(c) {
+    if (!c.voiceUsed) return "text";
+    if (c.hadNonVoiceTurn) return "voice_chat";
+    return "voice_only";
+  }
+
   function fieldChipStatus(lang, key, collected, step, awaitingArea, phase) {
     var c = collected;
     var has = function (v) {
@@ -1048,6 +1148,13 @@
       return { kind: ok ? "collected" : "missing", label: ok ? t(lang, "chip.collected") : t(lang, "chip.missing") };
     };
     var rev = { kind: "review", label: t(lang, "chip.review") };
+    if (key === "inputSource") {
+      var srcStarted = c.voiceUsed || !awaitingArea || step > 0 || has(c.serviceArea);
+      return srcStarted ? st(true) : st(false);
+    }
+    if (key === "voiceTranscript") {
+      return has(c.voiceTranscript) ? st(true) : st(false);
+    }
     if (key === "practice") return has(c.serviceArea) ? st(true) : st(false);
     if (key === "urgency") return has(c.urgency) ? st(true) : st(false);
     if (key === "lang") return has(c.preferredLanguage) ? st(true) : st(false);
@@ -1098,6 +1205,11 @@
   function liveBriefValue(lang, key, collected, step, awaitingArea, phase) {
     var c = collected;
     switch (key) {
+      case "inputSource":
+        if (!c.voiceUsed && awaitingArea && step === 0) return "";
+        return getLiveInputSourceLabel(lang, c);
+      case "voiceTranscript":
+        return (c.voiceTranscript && String(c.voiceTranscript).trim()) || "";
       case "practice":
         return c.serviceArea ? mapKey(lang, "form.ar.", c.serviceArea) : "";
       case "urgency":
@@ -1205,7 +1317,16 @@
 
     var out = [];
     out.push("═══ " + t(lang, "brief.source") + " ═══");
-    out.push(t(lang, "brief.sourceChat"));
+    if (c.voiceUsed) {
+      out.push(
+        c.hadNonVoiceTurn ? t(lang, "brief.intakeSource.voiceChat") : t(lang, "brief.intakeSource.voiceOnly")
+      );
+      out.push("");
+      out.push("═══ " + t(lang, "brief.voiceBlockTitle") + " ═══");
+      out.push((c.voiceTranscript && String(c.voiceTranscript).trim()) || "—");
+    } else {
+      out.push(t(lang, "brief.sourceChat"));
+    }
     out.push("");
     out.push("═══ " + t(lang, "brief.snapshot") + " ═══");
     out.push(snap);
@@ -1269,6 +1390,8 @@
       nextStep: collected.nextStep || "",
       extraAnswers: (collected.extraAnswers && collected.extraAnswers.slice()) || [],
       additionalNotes: collected.additionalNotes || "",
+      voiceTranscript: collected.voiceTranscript || "",
+      inputSource: getFormInputSource(collected),
     };
   }
 
@@ -1282,6 +1405,8 @@
           source: "chat",
           transcript: transcript,
           form: form,
+          voiceTranscript: form.voiceTranscript || "",
+          inputSource: form.inputSource || "text",
           attorneyBriefEn: briefEn,
           attorneyBriefZh: briefZh,
           summaryEn: briefEn,
@@ -1339,6 +1464,8 @@
       summaryEn: sub.attorneyBriefEn || sub.summaryEn,
       summaryZh: sub.attorneyBriefZh || sub.summaryZh,
       transcript: sub.transcript || [],
+      voiceTranscript: d.voiceTranscript || sub.voiceTranscript || "",
+      inputSource: d.inputSource || sub.inputSource || "text",
       missingStatic: null,
       recStatic: null,
     };
@@ -1479,7 +1606,20 @@
     function updateLiveBrief() {
       var lang = window.__lfdLang || "en";
       var wait = t(lang, "chat.waiting");
-      var keys = ["practice", "urgency", "lang", "contact", "facts", "dates", "docs", "missing", "rec", "nextq"];
+      var keys = [
+        "inputSource",
+        "voiceTranscript",
+        "practice",
+        "urgency",
+        "lang",
+        "contact",
+        "facts",
+        "dates",
+        "docs",
+        "missing",
+        "rec",
+        "nextq",
+      ];
       keys.forEach(function (k) {
         var fieldEl = document.querySelector('[data-brief-field="' + k + '"]');
         var chipEl = document.querySelector('[data-brief-chip="' + k + '"]');
@@ -1520,10 +1660,21 @@
       }, delay || 520);
     }
 
-    function processUserMessage(raw) {
+    function processUserMessage(raw, opts) {
+      opts = opts || {};
       if ((phase !== "chat" && phase !== "followup" && phase !== "ready") || inputLocked) return;
       var text = (raw || "").trim();
       if (!text) return;
+
+      if (!opts.fromVoice) {
+        collected.hadNonVoiceTurn = true;
+      } else {
+        collected.voiceUsed = true;
+        collected.voiceTranscript =
+          collected.voiceTranscript && String(collected.voiceTranscript).trim()
+            ? collected.voiceTranscript + "\n" + text
+            : text;
+      }
 
       inputLocked = true;
       appendMessage("user", text);
@@ -1601,6 +1752,7 @@
     }
 
     function resetDemo() {
+      if (typeof window.__lfdVoiceReset === "function") window.__lfdVoiceReset();
       msgsEl.innerHTML = "";
       collected = {};
       transcript = [];
@@ -1624,6 +1776,242 @@
       scrollChat();
       if (inputEl) inputEl.focus();
     }
+
+    (function initVoiceIntake() {
+      var premium = document.getElementById("lfd-voice-premium");
+      var mic = document.getElementById("lfd-voice-mic");
+      var langSel = document.getElementById("lfd-voice-lang");
+      var statusEl = document.getElementById("lfd-voice-status");
+      var unsup = document.getElementById("lfd-voice-unsupported");
+      var card = document.getElementById("lfd-voice-transcript-card");
+      var preview = document.getElementById("lfd-voice-transcript-preview");
+      var addChatBtn = document.getElementById("lfd-voice-add-chat");
+      var clearBtn = document.getElementById("lfd-voice-clear-transcript");
+      var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+      var supported = !!SR;
+      var recognition = null;
+      var userWantsListen = false;
+      var sessionFinal = "";
+      var lastInterim = "";
+      var isRecording = false;
+      var expectingStopFinalize = false;
+
+      function voiceLangFromUi() {
+        return langSel && langSel.value === "zh-CN" ? "zh-CN" : "en-US";
+      }
+
+      function syncVoiceLangFromSite() {
+        if (!langSel) return;
+        var lg = window.__lfdLang || "en";
+        langSel.value = lg === "zh" ? "zh-CN" : "en-US";
+      }
+
+      function setVoiceStatusKey(key) {
+        if (!statusEl) return;
+        statusEl.textContent = t(window.__lfdLang || "en", key);
+      }
+
+      function updateVoiceTranscriptUI(text, forceShowCard) {
+        if (preview) preview.textContent = text || "";
+        if (card) card.hidden = !(forceShowCard && text && String(text).trim());
+      }
+
+      function handleVoiceErr(code) {
+        var lang = window.__lfdLang || "en";
+        var key = "voice.err.generic";
+        if (code === "not-allowed") key = "voice.err.notAllowed";
+        else if (code === "no-speech") key = "voice.err.noSpeech";
+        else if (code === "network") key = "voice.err.network";
+        else if (code === "aborted") key = "voice.err.aborted";
+        statusEl.textContent = t(lang, key);
+      }
+
+      function tearDownRecognition() {
+        expectingStopFinalize = false;
+        userWantsListen = false;
+        isRecording = false;
+        if (premium) premium.classList.remove("is-recording");
+        if (mic) mic.setAttribute("aria-pressed", "false");
+        try {
+          if (recognition) recognition.stop();
+        } catch (e) {}
+        recognition = null;
+      }
+
+      function finalizeVoiceSession() {
+        var combined = (sessionFinal + " " + lastInterim).replace(/\s+/g, " ").trim();
+        lastInterim = "";
+        sessionFinal = "";
+        recognition = null;
+        isRecording = false;
+        if (premium) premium.classList.remove("is-recording");
+        if (mic) mic.setAttribute("aria-pressed", "false");
+        if (!combined) {
+          handleVoiceErr("no-speech");
+          setVoiceStatusKey("voice.idle");
+          return;
+        }
+        updateVoiceTranscriptUI(combined, true);
+        if (card) card.hidden = false;
+        setVoiceStatusKey("voice.processing");
+        setTimeout(function () {
+          processUserMessage(combined, { fromVoice: true });
+          updateLiveBrief();
+          setVoiceStatusKey("voice.done");
+          setTimeout(function () {
+            setVoiceStatusKey("voice.idle");
+          }, 2400);
+        }, 100);
+      }
+
+      function onRecognitionEnd() {
+        if (userWantsListen && recognition) {
+          try {
+            recognition.start();
+          } catch (e) {
+            userWantsListen = false;
+            if (expectingStopFinalize) {
+              expectingStopFinalize = false;
+              finalizeVoiceSession();
+            }
+          }
+          return;
+        }
+        if (expectingStopFinalize) {
+          expectingStopFinalize = false;
+          finalizeVoiceSession();
+        }
+      }
+
+      function stopVoiceRecognition() {
+        if (!isRecording) return;
+        userWantsListen = false;
+        expectingStopFinalize = true;
+        try {
+          if (recognition) recognition.stop();
+        } catch (e) {
+          expectingStopFinalize = false;
+        }
+      }
+
+      function startVoiceRecognition() {
+        if (!supported || inputLocked) return;
+        syncVoiceLangFromSite();
+        tearDownRecognition();
+        recognition = new SR();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = voiceLangFromUi();
+        sessionFinal = "";
+        lastInterim = "";
+        userWantsListen = true;
+        isRecording = true;
+        if (premium) premium.classList.add("is-recording");
+        if (mic) mic.setAttribute("aria-pressed", "true");
+        setVoiceStatusKey("voice.recording");
+
+        recognition.onresult = function (ev) {
+          var interim = "";
+          for (var i = ev.resultIndex; i < ev.results.length; i++) {
+            var piece = ev.results[i][0].transcript;
+            if (ev.results[i].isFinal) sessionFinal += piece;
+            else interim += piece;
+          }
+          lastInterim = interim;
+          var display = (sessionFinal + lastInterim).trim();
+          if (display) {
+            updateVoiceTranscriptUI(display, true);
+            if (card) card.hidden = false;
+          }
+        };
+
+        recognition.onerror = function (ev) {
+          if (ev.error === "aborted") return;
+          expectingStopFinalize = false;
+          userWantsListen = false;
+          isRecording = false;
+          if (premium) premium.classList.remove("is-recording");
+          if (mic) mic.setAttribute("aria-pressed", "false");
+          recognition = null;
+          handleVoiceErr(ev.error);
+          setTimeout(function () {
+            setVoiceStatusKey("voice.idle");
+          }, 3200);
+        };
+
+        recognition.onend = onRecognitionEnd;
+
+        try {
+          recognition.start();
+        } catch (e) {
+          tearDownRecognition();
+          handleVoiceErr("generic");
+          setVoiceStatusKey("voice.idle");
+        }
+      }
+
+      function setVoiceUiUnsupported() {
+        if (!premium) return;
+        premium.classList.add("is-unsupported");
+        if (mic) mic.disabled = true;
+        if (unsup) {
+          unsup.hidden = false;
+          unsup.textContent = t(window.__lfdLang || "en", "voice.unsupportedDetail");
+        }
+        setVoiceStatusKey("voice.unsupportedInline");
+      }
+
+      window.__lfdVoiceReset = function () {
+        tearDownRecognition();
+        sessionFinal = "";
+        lastInterim = "";
+        updateVoiceTranscriptUI("", false);
+        if (card) card.hidden = true;
+        if (supported) setVoiceStatusKey("voice.idle");
+      };
+
+      window.__lfdVoiceOnLangChange = function () {
+        syncVoiceLangFromSite();
+        if (supported && statusEl && !isRecording) setVoiceStatusKey("voice.idle");
+        if (unsup && !supported) unsup.textContent = t(window.__lfdLang || "en", "voice.unsupportedDetail");
+      };
+
+      if (!supported) {
+        setVoiceUiUnsupported();
+      } else {
+        syncVoiceLangFromSite();
+        setVoiceStatusKey("voice.idle");
+        if (mic) {
+          mic.addEventListener("click", function () {
+            if (!supported || inputLocked) return;
+            if (isRecording) stopVoiceRecognition();
+            else startVoiceRecognition();
+          });
+        }
+        if (langSel) {
+          langSel.addEventListener("change", function () {
+            if (recognition && isRecording) {
+              stopVoiceRecognition();
+              setVoiceStatusKey("voice.idle");
+            }
+          });
+        }
+        if (clearBtn) {
+          clearBtn.addEventListener("click", function () {
+            updateVoiceTranscriptUI("", false);
+            if (card) card.hidden = true;
+          });
+        }
+        if (addChatBtn) {
+          addChatBtn.addEventListener("click", function () {
+            var txt = preview ? String(preview.textContent || "").trim() : "";
+            if (!txt || inputLocked) return;
+            processUserMessage(txt, { fromVoice: true });
+            updateLiveBrief();
+          });
+        }
+      }
+    })();
 
     function buildChips() {
       if (!chipsWrap) return;
@@ -1681,11 +2069,15 @@
     };
 
     function setInputEnabled(on) {
+      if (!on && typeof window.__lfdVoiceReset === "function") window.__lfdVoiceReset();
       if (inputEl) {
         inputEl.disabled = !on;
         inputEl.classList.toggle("is-disabled", !on);
       }
       if (sendBtn) sendBtn.disabled = !on;
+      var vm = document.getElementById("lfd-voice-mic");
+      var vprem = document.getElementById("lfd-voice-premium");
+      if (vm) vm.disabled = !on || (vprem && vprem.classList.contains("is-unsupported"));
     }
 
     function onSend() {
@@ -1928,8 +2320,13 @@
             ? "中文"
             : "Chinese";
       subjEl.textContent = t(lang, "admin.emailSubj").replace(/\{area\}/g, area).replace(/\{urgency\}/g, urg);
+      var srcLine = t(lang, "admin.emailSourceText");
+      if (sl && sl.inputSource === "voice_chat") srcLine = t(lang, "admin.emailSourceVoiceChat");
+      else if (sl && sl.inputSource === "voice_only") srcLine = t(lang, "admin.emailSourceVoiceOnly");
       var lines = [
         t(lang, "admin.emailBodyIntro"),
+        "",
+        srcLine,
         "",
         (isZh ? "法律服务领域：" : "Practice Area: ") + area,
         (isZh ? "紧急程度：" : "Urgency: ") + urg,
@@ -2013,7 +2410,11 @@
         var badges =
           (lead.fromChat
             ? '<span class="lfd-badge lfd-badge--chat">' + t(lang, "lead.badgeChat") + "</span> "
-            : "") + '<span class="lfd-badge lfd-badge--status"></span>';
+            : "") +
+          (lead.voiceTranscript && String(lead.voiceTranscript).trim()
+            ? '<span class="lfd-badge lfd-badge--voice">' + t(lang, "lead.badgeVoice") + "</span> "
+            : "") +
+          '<span class="lfd-badge lfd-badge--status"></span>';
         btn.innerHTML =
           '<p class="lfd-lead-card__name"></p><p class="lfd-lead-card__meta"></p><div class="lfd-lead-card__badges">' +
           badges +
@@ -2064,6 +2465,18 @@
           : lang === "zh"
             ? "（演示）无对话记录。"
             : "(Demo) No chat transcript.";
+      var voiceSec = document.getElementById("lfd-panel-voice-section");
+      var voiceP = document.getElementById("lfd-p-voice-transcript");
+      var vtxt = lead.voiceTranscript && String(lead.voiceTranscript).trim();
+      if (voiceSec && voiceP) {
+        if (vtxt) {
+          voiceSec.hidden = false;
+          voiceP.textContent = lead.voiceTranscript;
+        } else {
+          voiceSec.hidden = true;
+          voiceP.textContent = "";
+        }
+      }
       document.getElementById("lfd-p-dates").textContent = lead.importantDates || "—";
       var docsComb = formatLeadDocuments(lead, lang);
       document.getElementById("lfd-p-docs").textContent = docsComb || "—";

@@ -1632,6 +1632,14 @@ main,
   line-height: 1.45;
 }
 
+.pricing-teaser__note {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(130, 195, 235, 0.88);
+  line-height: 1.4;
+}
+
 .contact-ready {
   margin: 2rem 0 2.5rem;
   padding: 1.35rem 1.5rem;
@@ -1821,6 +1829,20 @@ main,
 .pricing-card--featured {
   border-color: rgba(120, 175, 235, 0.35);
   box-shadow: 0 0 0 1px rgba(100, 170, 240, 0.06);
+}
+
+.pricing-card__tier-badge {
+  margin: 0 0 0.5rem;
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.55rem;
+  border-radius: 6px;
+  color: rgba(220, 235, 255, 0.95);
+  background: linear-gradient(125deg, rgba(56, 180, 232, 0.22), rgba(101, 120, 235, 0.28));
+  border: 1px solid rgba(130, 190, 245, 0.35);
 }
 
 .pricing-card__title {

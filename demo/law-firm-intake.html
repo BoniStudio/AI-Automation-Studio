@@ -219,6 +219,49 @@
               <div class="lfd-upload-chips" id="lfd-upload-chips"></div>
             </div>
 
+            <div class="lfd-voice-premium" id="lfd-voice-premium">
+              <div class="lfd-voice-premium__head">
+                <span class="lfd-voice-premium__badge" data-i18n="voice.badge">Premium</span>
+                <h4 class="lfd-voice-premium__title" data-i18n="voice.ctaTitle">Voice Intake</h4>
+                <p class="lfd-voice-premium__desc" data-i18n="voice.ctaDesc">Speak naturally…</p>
+              </div>
+              <p class="lfd-voice-premium__warn" id="lfd-voice-unsupported" hidden data-i18n="voice.unsupportedInline">
+                Voice input is not available in this browser.
+              </p>
+              <div class="lfd-voice-controls">
+                <div class="lfd-voice-mic-wrap">
+                  <span class="lfd-voice-pulse" id="lfd-voice-pulse" aria-hidden="true"></span>
+                  <button type="button" class="lfd-voice-mic" id="lfd-voice-mic" aria-pressed="false" aria-label="Voice intake">
+                    <span class="lfd-voice-mic__icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="lfd-voice-wave" id="lfd-voice-wave" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="lfd-voice-side">
+                  <label class="lfd-voice-lang-label" for="lfd-voice-lang" data-i18n="voice.langLabel">Voice Language</label>
+                  <select id="lfd-voice-lang" class="lfd-voice-lang-select">
+                    <option value="en-US">English</option>
+                    <option value="zh-CN">中文</option>
+                  </select>
+                  <p class="lfd-voice-status" id="lfd-voice-status" data-i18n="voice.idle">Start Voice Intake</p>
+                </div>
+              </div>
+              <p class="lfd-voice-legal" data-i18n="voice.safetyDisclaimer">Do not submit real sensitive information…</p>
+              <div class="lfd-voice-transcript-card" id="lfd-voice-transcript-card" hidden>
+                <h5 class="lfd-voice-transcript-card__title" data-i18n="voice.transcriptTitle">Voice Transcript</h5>
+                <p class="lfd-voice-transcript-card__body" id="lfd-voice-transcript-preview"></p>
+                <div class="lfd-voice-transcript-card__actions">
+                  <button type="button" class="lfd-btn lfd-btn--secondary lfd-btn--sm" id="lfd-voice-add-chat" data-i18n="voice.addToChat">
+                    Add to Chat
+                  </button>
+                  <button type="button" class="lfd-btn lfd-btn--secondary lfd-btn--sm" id="lfd-voice-clear-transcript" data-i18n="voice.clearTranscript">
+                    Clear Transcript
+                  </button>
+                </div>
+              </div>
+            </div>
+
             <div class="lfd-chat-input-row">
               <textarea
                 id="lfd-chat-input"
@@ -245,6 +288,20 @@
         <aside class="lfd-brief-panel">
           <h3 class="lfd-brief-panel__title" data-i18n="chat.liveBriefTitle">Live Structured Extraction</h3>
           <div class="lfd-brief-rows">
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.inputSource">Input Source</span>
+                <span class="lfd-status-chip" data-brief-chip="inputSource" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="inputSource">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.voiceTranscript">Voice Transcript</span>
+                <span class="lfd-status-chip" data-brief-chip="voiceTranscript" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="voiceTranscript">—</div>
+            </div>
             <div class="lfd-brief-row">
               <div class="lfd-brief-row__head">
                 <span data-i18n="live.practice">Practice Area</span>
@@ -394,6 +451,9 @@
             <li data-i18n="pkg.p3i2">…</li>
             <li data-i18n="pkg.p3i3">…</li>
             <li data-i18n="pkg.p3i4">…</li>
+            <li data-i18n="pkg.p3v1">…</li>
+            <li data-i18n="pkg.p3v2">…</li>
+            <li data-i18n="pkg.p3v3">…</li>
             <li data-i18n="pkg.p3i5">…</li>
           </ul>
           <a
