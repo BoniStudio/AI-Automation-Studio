@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BoniStudio — AI Automation Studio</title>
+    <title data-i18n="meta.siteTitle">BoniStudio — AI Automation Studio</title>
     <meta
       name="description"
+      data-i18n="meta.siteDesc"
       content="AI-powered websites, intake systems, and automation tools for modern businesses, creators, and professional service teams."
     />
     <meta property="og:title" content="BoniStudio — AI Automation Studio" />
@@ -44,16 +45,15 @@
         <nav class="nav" id="nav" aria-label="Main">
           <ul class="nav__list">
             <li><a class="nav__link" href="#services" data-i18n="nav.services">Services</a></li>
-            <li><a class="nav__link" href="#systems" data-i18n="nav.systems">Systems</a></li>
-            <li><a class="nav__link" href="#process" data-i18n="nav.process">Process</a></li>
-            <li><a class="nav__link" href="#why" data-i18n="nav.why">Why Us</a></li>
-            <li><a class="nav__link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+            <li><a class="nav__link" href="demo/law-firm-intake.html" data-i18n="nav.demo">Demo</a></li>
+            <li><a class="nav__link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
           <div class="nav__actions">
             <button type="button" class="btn btn--ghost lang-toggle" id="langToggle" aria-label="Switch language">
               <span id="langToggleLabel">中文</span>
             </button>
-            <a class="btn btn--primary btn--sm" href="#contact" data-i18n="nav.bookDemo">Book a Demo</a>
+            <a class="btn btn--primary btn--sm" href="contact.html" data-i18n="nav.bookDemo">Book a Demo</a>
           </div>
         </nav>
         <button
@@ -81,8 +81,8 @@
               We build AI-powered websites, intake systems, and automations that help small teams capture leads, reduce repetitive work, and launch faster.
             </p>
             <div class="hero__actions">
-              <a class="btn btn--primary" href="#contact" data-i18n="hero.ctaPrimary">Book a Demo</a>
-              <a class="btn btn--secondary" href="#systems" data-i18n="hero.ctaSecondary">View Example Systems</a>
+              <a class="btn btn--primary" href="contact.html" data-i18n="hero.ctaPrimary">Book a Demo</a>
+              <a class="btn btn--secondary" href="demo/law-firm-intake.html" data-i18n="hero.ctaSecondary">View Example Systems</a>
             </div>
             <p class="hero__trust" data-i18n="hero.trust">Bilingual. AI-first. Built fast. Designed for real business use.</p>
           </div>
@@ -281,8 +281,8 @@
               </div>
               <h3 class="card__title" data-i18n="systems.law.title">Law Firm AI Intake System</h3>
               <ul class="card__list">
-                <li data-i18n="systems.law.f1">Structured client intake</li>
-                <li data-i18n="systems.law.f2">Bilingual summaries</li>
+                <li data-i18n="systems.law.f1">AI chat intake assistant</li>
+                <li data-i18n="systems.law.f2">Structured attorney brief</li>
                 <li data-i18n="systems.law.f3">Document checklist</li>
                 <li data-i18n="systems.law.f4">Attorney admin preview</li>
                 <li data-i18n="systems.law.f5">Website upgrade option</li>
@@ -401,6 +401,67 @@
         <span class="section-divider__dot"></span>
       </div>
 
+      <section class="section pricing-teaser">
+        <div class="container">
+          <h2 class="section__title reveal" data-i18n="home.pricingTeaser.title">Simple project-based pricing</h2>
+          <p class="section__lead reveal" data-i18n="home.pricingTeaser.lead">
+            Transparent starting ranges for law firm websites and AI-assisted intake.
+          </p>
+          <div class="grid grid--3 pricing-teaser__grid">
+            <article class="card pricing-teaser__card reveal">
+              <h3 class="pricing-teaser__card-title" data-i18n="home.pricingTeaser.c1t">Website Modernization</h3>
+              <p class="pricing-teaser__price" data-i18n="home.pricingTeaser.c1p">from $500</p>
+              <a
+                class="btn btn--primary btn--full pricing-teaser__pay"
+                href="https://buy.stripe.com/14A4gs5WB1Y2cRp4F6bAs02"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-stripe="websiteDeposit"
+                data-i18n="home.pricingTeaser.payDeposit"
+                >Pay Deposit</a
+              >
+            </article>
+            <article class="card pricing-teaser__card reveal">
+              <h3 class="pricing-teaser__card-title" data-i18n="home.pricingTeaser.c2t">AI Intake Add-on</h3>
+              <p class="pricing-teaser__price" data-i18n="home.pricingTeaser.c2p">from $800</p>
+              <a
+                class="btn btn--primary btn--full pricing-teaser__pay"
+                href="https://buy.stripe.com/9B68wI84JgSWdVtdbCbAs01"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-stripe="aiIntakeDeposit"
+                data-i18n="home.pricingTeaser.payDeposit"
+                >Pay Deposit</a
+              >
+            </article>
+            <article class="card pricing-teaser__card reveal">
+              <h3 class="pricing-teaser__card-title" data-i18n="home.pricingTeaser.c3t">Complete System</h3>
+              <p class="pricing-teaser__price" data-i18n="home.pricingTeaser.c3p">from $1,500</p>
+              <a
+                class="btn btn--primary btn--full pricing-teaser__pay"
+                href="https://buy.stripe.com/aFa6oA70FbyC9Fdb3ubAs00"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-stripe="completeSystemDeposit"
+                data-i18n="home.pricingTeaser.payDeposit"
+                >Pay Deposit</a
+              >
+            </article>
+          </div>
+          <p class="pricing-teaser__payment-note reveal" data-i18n="pricing.paymentNote">
+            Deposits are processed securely through Stripe.
+          </p>
+          <div class="pricing-teaser__cta-wrap reveal">
+            <a class="btn btn--secondary" href="pricing.html" data-i18n="home.pricingTeaser.cta">View Pricing</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true">
+        <span class="section-divider__track"></span>
+        <span class="section-divider__dot"></span>
+      </div>
+
       <section class="section contact" id="contact">
         <div class="container">
           <h2 class="section__title reveal" data-i18n="contact.title">Ready to modernize your business system?</h2>
@@ -413,11 +474,7 @@
               <a class="contact__email" href="mailto:bonistudio.core@gmail.com">bonistudio.core@gmail.com</a>
               <div class="contact__actions">
                 <a class="btn btn--primary" href="mailto:bonistudio.core@gmail.com" data-i18n="contact.emailUs">Email Us</a>
-                <a
-                  class="btn btn--secondary"
-                  id="contactBookDemo"
-                  href="mailto:bonistudio.core@gmail.com?subject=Book%20a%20Demo"
-                  data-i18n="contact.bookDemo"
+                <a class="btn btn--secondary" id="contactBookDemo" href="contact.html" data-i18n="contact.bookDemo"
                   >Book a Demo</a
                 >
               </div>
@@ -444,9 +501,31 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p class="footer__brand">BoniStudio</p>
+    <footer class="footer site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand-block">
+          <p class="footer__brand">BoniStudio</p>
+          <p class="site-footer__tag" data-i18n="nav.tagline">AI Automation Studio</p>
+          <p class="site-footer__tagline" data-i18n="footer.tagline">
+            Modern websites and AI-assisted workflow systems for professional service businesses.
+          </p>
+          <p class="site-footer__meta" data-i18n="footer.location">Seattle, WA</p>
+          <p class="site-footer__meta">
+            <a href="mailto:bonistudio.core@gmail.com">bonistudio.core@gmail.com</a>
+          </p>
+        </div>
+        <div class="site-footer__nav-block">
+          <p class="site-footer__nav-title" data-i18n="footer.navTitle">Navigate</p>
+          <ul class="site-footer__links">
+            <li><a href="#top" data-i18n="footer.linkHome">Home</a></li>
+            <li><a href="pricing.html" data-i18n="footer.linkPricing">Pricing</a></li>
+            <li><a href="contact.html" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="privacy.html" data-i18n="footer.linkPrivacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.linkTerms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
         <p class="footer__copy" data-i18n="footer.copy">© BoniStudio. AI Automation Studio.</p>
       </div>
     </footer>

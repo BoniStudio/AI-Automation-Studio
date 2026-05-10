@@ -1509,6 +1509,372 @@ main,
   color: var(--text-muted);
 }
 
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem 3rem;
+  align-items: start;
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-footer__tag {
+  margin: 0.15rem 0 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.site-footer__tagline {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: rgba(200, 210, 230, 0.82);
+  max-width: 28rem;
+}
+
+.site-footer__meta {
+  margin: 0.2rem 0;
+  font-size: 0.78125rem;
+  color: var(--text-muted);
+}
+
+.site-footer__meta a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.site-footer__nav-title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-tight);
+  color: var(--text);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.site-footer__links a {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  transition: color 0.2s var(--ease-out);
+}
+
+.site-footer__links a:hover {
+  color: var(--accent-strong);
+}
+
+.site-footer__bottom {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.pricing-teaser__grid {
+  margin-top: 0.5rem;
+}
+
+.pricing-teaser__card {
+  padding: 1.25rem 1.35rem;
+}
+
+.pricing-teaser__card-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+  letter-spacing: var(--tracking-tight);
+}
+
+.pricing-teaser__price {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgba(130, 200, 245, 0.92);
+  letter-spacing: var(--tracking-tight);
+}
+
+.pricing-teaser__pay {
+  margin-top: 1rem;
+}
+
+.pricing-teaser__payment-note {
+  margin: 1.25rem auto 0;
+  max-width: 40rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.pricing-teaser__cta-wrap {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-ready {
+  margin: 2rem 0 2.5rem;
+  padding: 1.35rem 1.5rem;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+}
+
+.contact-ready__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  letter-spacing: var(--tracking-tight);
+}
+
+.contact-ready__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.pricing-page__note--muted {
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  border-style: dashed;
+}
+
+.page-main {
+  padding-top: calc(var(--header-h) + 2rem);
+  padding-bottom: 3rem;
+}
+
+.page-hero {
+  padding-bottom: 2rem;
+}
+
+.page-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: var(--tracking-section);
+  margin: 0 0 0.75rem;
+  line-height: 1.15;
+}
+
+.page-hero__lead {
+  margin: 0;
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  max-width: 40rem;
+  line-height: 1.55;
+}
+
+.pricing-page__note {
+  margin: 0 0 2rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  font-size: 0.875rem;
+  color: rgba(200, 210, 230, 0.88);
+  line-height: 1.55;
+}
+
+.pricing-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .pricing-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing-card {
+  padding: 1.35rem 1.4rem;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.pricing-card--featured {
+  border-color: rgba(120, 175, 235, 0.35);
+  box-shadow: 0 0 0 1px rgba(100, 170, 240, 0.06);
+}
+
+.pricing-card__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+}
+
+.pricing-card__price {
+  margin: 0 0 0.75rem;
+  font-size: 0.9375rem;
+  color: rgba(130, 200, 245, 0.9);
+  font-weight: 500;
+}
+
+.pricing-card__desc {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.pricing-card__includes {
+  margin: 0 0 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(165, 200, 235, 0.85);
+}
+
+.pricing-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.84375rem;
+  color: rgba(200, 210, 230, 0.88);
+  flex: 1;
+}
+
+.pricing-card__list li {
+  margin-bottom: 0.35rem;
+}
+
+.pricing-card__cta {
+  margin-top: 1.15rem;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-maint {
+  margin-top: 1.5rem;
+}
+
+.contact-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.contact-page__meta {
+  margin: 0.35rem 0;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.contact-page__meta a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  max-width: 36rem;
+}
+
+.contact-form__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+}
+
+.contact-form__hint {
+  margin: 0 0 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.contact-form__row {
+  margin-bottom: 1rem;
+}
+
+.contact-form__row label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+  color: rgba(200, 210, 230, 0.9);
+}
+
+.contact-form__row input,
+.contact-form__row select,
+.contact-form__row textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+}
+
+.contact-form__row textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.legal-page {
+  max-width: 44rem;
+}
+
+.legal-card {
+  padding: 1.5rem 1.6rem;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  margin-bottom: 1rem;
+}
+
+.legal-card h2 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.65rem;
+  letter-spacing: var(--tracking-tight);
+  color: rgba(185, 215, 245, 0.95);
+}
+
+.legal-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.62;
+  color: rgba(200, 210, 230, 0.88);
+}
+
+.legal-updated {
+  margin: 0 0 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
 /* —— Scroll reveal —— (opacity + transform only; unobserve in JS) */
 .reveal {
   opacity: 0;

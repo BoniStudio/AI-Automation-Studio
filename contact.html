@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.contactTitle">Contact — BoniStudio</title>
+    <meta
+      name="description"
+      data-i18n="meta.contactDesc"
+      content="Contact BoniStudio for website modernization and AI intake systems."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__mesh"></div>
+      <div class="ambient__grid"></div>
+      <div class="ambient__flow ambient__flow--1"></div>
+      <div class="ambient__flow ambient__flow--2"></div>
+      <div class="ambient__nodes">
+        <span class="ambient__node"></span>
+        <span class="ambient__node"></span>
+        <span class="ambient__node"></span>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header__inner container">
+        <a class="brand" href="index.html#top" aria-label="BoniStudio home">
+          <span class="brand__name" data-i18n="nav.brand">BoniStudio</span>
+          <span class="brand__tag" data-i18n="nav.tagline">AI Automation Studio</span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html#services" data-i18n="nav.services">Services</a></li>
+            <li><a class="nav__link" href="demo/law-firm-intake.html" data-i18n="nav.demo">Demo</a></li>
+            <li><a class="nav__link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <div class="nav__actions">
+            <button type="button" class="btn btn--ghost lang-toggle" id="langToggle" aria-label="Switch language">
+              <span id="langToggleLabel">中文</span>
+            </button>
+            <a class="btn btn--primary btn--sm" href="contact.html" data-i18n="nav.bookDemo">Book a Demo</a>
+          </div>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Open menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-main container" id="top">
+      <header class="page-hero">
+        <h1 class="page-hero__title" data-i18n="contactPage.title">Contact BoniStudio</h1>
+        <p class="page-hero__lead" data-i18n="contactPage.subtitle">
+          Send your current website, business workflow, or project idea. We will recommend whether you need a website
+          upgrade, AI intake add-on, or complete system.
+        </p>
+      </header>
+
+      <p class="contact-page__meta" data-i18n="contactPage.location">Seattle, WA</p>
+      <p class="contact-page__meta">
+        <a href="mailto:bonistudio.core@gmail.com">bonistudio.core@gmail.com</a>
+      </p>
+
+      <div class="contact-page__actions">
+        <a class="btn btn--primary" href="mailto:bonistudio.core@gmail.com?subject=Project%20Inquiry" data-i18n="contactPage.emailUs"
+          >Email Us</a
+        >
+        <a class="btn btn--secondary" href="pricing.html" data-i18n="contactPage.viewPricing">View Pricing</a>
+        <a class="btn btn--secondary" href="demo/law-firm-intake.html" data-i18n="contactPage.viewDemo">View Law Firm Demo</a>
+      </div>
+
+      <section class="contact-ready" aria-labelledby="contact-ready-title">
+        <h2 id="contact-ready-title" class="contact-ready__title" data-i18n="contactPage.readyTitle">Ready to start?</h2>
+        <div class="contact-ready__actions">
+          <a
+            class="btn btn--secondary"
+            href="https://buy.stripe.com/14A4gs5WB1Y2cRp4F6bAs02"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-stripe="websiteDeposit"
+            data-i18n="contactPage.payWebsiteDeposit"
+            >Pay Website Deposit</a
+          >
+          <a
+            class="btn btn--secondary"
+            href="https://buy.stripe.com/9B68wI84JgSWdVtdbCbAs01"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-stripe="aiIntakeDeposit"
+            data-i18n="contactPage.payAiDeposit"
+            >Pay AI Intake Deposit</a
+          >
+          <a
+            class="btn btn--primary"
+            href="https://buy.stripe.com/aFa6oA70FbyC9Fdb3ubAs00"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-stripe="completeSystemDeposit"
+            data-i18n="contactPage.payCompleteDeposit"
+            >Pay Complete System Deposit</a
+          >
+        </div>
+      </section>
+
+      <form class="contact-form" id="siteContactForm" novalidate>
+        <h2 class="contact-form__title" data-i18n="contactPage.formTitle">Project inquiry</h2>
+        <p class="contact-form__hint" data-i18n="contactPage.formHint">
+          Submit opens your email app with a draft — no data is sent to a server.
+        </p>
+        <div class="contact-form__row">
+          <label for="cf-name" data-i18n="contactPage.name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" data-i18n-placeholder="contactPage.name" placeholder="Name" />
+        </div>
+        <div class="contact-form__row">
+          <label for="cf-email" data-i18n="contactPage.email">Email</label>
+          <input
+            id="cf-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            data-i18n-placeholder="contactPage.email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="contact-form__row">
+          <label for="cf-company" data-i18n="contactPage.company">Company</label>
+          <input id="cf-company" name="company" type="text" data-i18n-placeholder="contactPage.company" placeholder="Company" />
+        </div>
+        <div class="contact-form__row">
+          <label for="cf-website" data-i18n="contactPage.website">Website</label>
+          <input id="cf-website" name="website" type="url" data-i18n-placeholder="contactPage.website" placeholder="Website" />
+        </div>
+        <div class="contact-form__row">
+          <label for="cf-type" data-i18n="contactPage.projectType">Project type</label>
+          <select id="cf-type" name="projectType">
+            <option value="" data-i18n="contactPage.typeHint">Select a project type</option>
+            <option value="Website Modernization" data-i18n="contactPage.opt.web">Website Modernization</option>
+            <option value="AI Intake Add-on" data-i18n="contactPage.opt.ai">AI Intake Add-on</option>
+            <option value="Complete Law Firm System" data-i18n="contactPage.opt.complete">Complete Law Firm System</option>
+            <option value="Other" data-i18n="contactPage.opt.other">Other</option>
+          </select>
+        </div>
+        <div class="contact-form__row">
+          <label for="cf-msg" data-i18n="contactPage.message">Message</label>
+          <textarea id="cf-msg" name="message" data-i18n-placeholder="contactPage.message" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" data-i18n="contactPage.submit">Send via email</button>
+      </form>
+    </main>
+
+    <footer class="footer site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand-block">
+          <p class="footer__brand">BoniStudio</p>
+          <p class="site-footer__tag" data-i18n="nav.tagline">AI Automation Studio</p>
+          <p class="site-footer__tagline" data-i18n="footer.tagline">
+            Modern websites and AI-assisted workflow systems for professional service businesses.
+          </p>
+          <p class="site-footer__meta" data-i18n="footer.location">Seattle, WA</p>
+          <p class="site-footer__meta">
+            <a href="mailto:bonistudio.core@gmail.com">bonistudio.core@gmail.com</a>
+          </p>
+        </div>
+        <div class="site-footer__nav-block">
+          <p class="site-footer__nav-title" data-i18n="footer.navTitle">Navigate</p>
+          <ul class="site-footer__links">
+            <li><a href="index.html#top" data-i18n="footer.linkHome">Home</a></li>
+            <li><a href="pricing.html" data-i18n="footer.linkPricing">Pricing</a></li>
+            <li><a href="contact.html" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="privacy.html" data-i18n="footer.linkPrivacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.linkTerms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">© BoniStudio. AI Automation Studio.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

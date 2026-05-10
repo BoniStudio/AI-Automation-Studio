@@ -37,7 +37,7 @@
         <h1 class="lfd-h1" data-i18n="hero.title">AI Intake Workflow for Modern Law Firms</h1>
         <p class="lfd-lead" data-i18n="hero.sub">A bilingual intake system…</p>
         <div class="lfd-actions">
-          <a class="lfd-btn lfd-btn--primary" href="#intake-form" data-i18n="hero.cta1">Try Intake Demo</a>
+          <a class="lfd-btn lfd-btn--primary" href="#chat-demo" data-i18n="hero.cta1">Try Chat Intake</a>
           <a class="lfd-btn lfd-btn--secondary" href="law-firm-admin.html" data-i18n="hero.cta2">View Admin Preview</a>
         </div>
         <p class="lfd-trust" data-i18n="hero.trust">Designed for immigration…</p>
@@ -49,11 +49,11 @@
             <span class="lfd-flow__arrow">↓</span>
           </div>
           <div class="lfd-flow__row">
-            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.f">Intake Form</span>
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.f">AI Chat</span>
             <span class="lfd-flow__arrow">↓</span>
           </div>
           <div class="lfd-flow__row">
-            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.a">AI Summary</span>
+            <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.a">Intake Brief</span>
             <span class="lfd-flow__arrow">↓</span>
           </div>
           <div class="lfd-flow__row">
@@ -64,6 +64,28 @@
             <span class="lfd-flow__node lfd-hero__flow-node" data-i18n="flow.x">Consultation</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="lfd-section lfd-container">
+      <h2 class="lfd-h2" data-i18n="products.title">What your firm gets</h2>
+      <div class="lfd-grid lfd-grid--2 lfd-premium-grid">
+        <article class="lfd-premium-card">
+          <h3 class="lfd-premium-card__title" data-i18n="products.c1t">AI Chat Intake Assistant</h3>
+          <p class="lfd-premium-card__text" data-i18n="products.c1d">…</p>
+        </article>
+        <article class="lfd-premium-card">
+          <h3 class="lfd-premium-card__title" data-i18n="products.c2t">Structured Attorney Brief</h3>
+          <p class="lfd-premium-card__text" data-i18n="products.c2d">…</p>
+        </article>
+        <article class="lfd-premium-card">
+          <h3 class="lfd-premium-card__title" data-i18n="products.c3t">Email Alert + Secure Dashboard</h3>
+          <p class="lfd-premium-card__text" data-i18n="products.c3d">…</p>
+        </article>
+        <article class="lfd-premium-card">
+          <h3 class="lfd-premium-card__title" data-i18n="products.c4t">Custom Practice Area Questions</h3>
+          <p class="lfd-premium-card__text" data-i18n="products.c4d">…</p>
+        </article>
       </div>
     </section>
 
@@ -110,172 +132,298 @@
       </ol>
     </section>
 
-    <section class="lfd-section lfd-container" id="intake-form">
-      <h2 class="lfd-h2" data-i18n="form.title">Try the law firm intake workflow</h2>
-      <form class="lfd-form-wrap" id="lfd-intake-form">
-        <div class="lfd-field">
-          <label for="lfd-filler" data-i18n="form.filler">Who is filling this form?</label>
-          <select id="lfd-filler" name="filler" required>
-            <option value="client" data-i18n="form.opt.client">Client</option>
-            <option value="assistant" data-i18n="form.opt.assistant">Staff member</option>
-            <option value="family" data-i18n="form.opt.family">Family member / representative</option>
-          </select>
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-name" data-i18n="form.name">Client name</label>
-          <input type="text" id="lfd-name" name="name" required autocomplete="name" />
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-lang" data-i18n="form.lang">Preferred language</label>
-          <select id="lfd-lang" name="lang" required>
-            <option value="english" data-i18n="form.lang.en">English</option>
-            <option value="chinese" data-i18n="form.lang.zh">Chinese</option>
-            <option value="bilingual" data-i18n="form.lang.bi">Bilingual</option>
-          </select>
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-contact" data-i18n="form.contact">Contact method</label>
-          <select id="lfd-contact" name="contact" required>
-            <option value="phone" data-i18n="form.cm.phone">Phone</option>
-            <option value="email" data-i18n="form.cm.email">Email</option>
-            <option value="sms" data-i18n="form.cm.sms">SMS</option>
-            <option value="wechat" data-i18n="form.cm.wechat">WeChat</option>
-          </select>
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-contact-detail" data-i18n="form.contactDetail">Phone / email / WeChat ID (if applicable)</label>
-          <input type="text" id="lfd-contact-detail" name="contactDetail" required autocomplete="tel" />
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-area" data-i18n="form.area">Practice area</label>
-          <select id="lfd-area" name="area" required>
-            <option value="immigration" data-i18n="form.ar.immigration">Immigration</option>
-            <option value="family" data-i18n="form.ar.family">Family / Divorce</option>
-            <option value="realestate" data-i18n="form.ar.realestate">Real Estate</option>
-            <option value="business" data-i18n="form.ar.business">Business</option>
-            <option value="injury" data-i18n="form.ar.injury">Personal Injury</option>
-            <option value="estate" data-i18n="form.ar.estate">Estate Planning</option>
-            <option value="other" data-i18n="form.ar.other">Other</option>
-          </select>
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-urgency" data-i18n="form.urgency">Urgency level</label>
-          <select id="lfd-urgency" name="urgency" required>
-            <option value="low" data-i18n="form.ug.low">Low</option>
-            <option value="medium" data-i18n="form.ug.med">Medium</option>
-            <option value="high" data-i18n="form.ug.high">High</option>
-            <option value="urgent" data-i18n="form.ug.urgent">Urgent</option>
-          </select>
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-situation" data-i18n="form.situation">Situation description</label>
-          <textarea id="lfd-situation" name="situation" required data-i18n-placeholder="form.situation.ph"></textarea>
-        </div>
-        <div class="lfd-field">
-          <label for="lfd-dates" data-i18n="form.dates">Important dates</label>
-          <input type="text" id="lfd-dates" name="dates" data-i18n-placeholder="form.dates.ph" />
-        </div>
-        <div class="lfd-field">
-          <span class="lfd-label" data-i18n="form.docs">Available documents</span>
-          <div class="lfd-checks">
-            <label class="lfd-check"><input type="checkbox" name="docs" value="passport" /> <span data-i18n="form.doc.passport">Passport / ID</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="uscis" /> <span data-i18n="form.doc.uscis">USCIS notice</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="court" /> <span data-i18n="form.doc.court">Court document</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="contract" /> <span data-i18n="form.doc.contract">Contract</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="police" /> <span data-i18n="form.doc.police">Police report</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="medical" /> <span data-i18n="form.doc.medical">Medical record</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="marriage" /> <span data-i18n="form.doc.marriage">Marriage certificate</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="tax" /> <span data-i18n="form.doc.tax">Tax / financial document</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="photos" /> <span data-i18n="form.doc.photos">Photos / evidence</span></label>
-            <label class="lfd-check"><input type="checkbox" name="docs" value="unsure" /> <span data-i18n="form.doc.unsure">Not sure</span></label>
+    <section class="lfd-section lfd-container" id="delivery-flow">
+      <h2 class="lfd-h2" data-i18n="delivery.title">How your team receives the intake</h2>
+      <ol class="lfd-steps">
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="delivery.s1t">Step 1</h3>
+            <p data-i18n="delivery.s1d">…</p>
+          </div>
+        </li>
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="delivery.s2t">Step 2</h3>
+            <p data-i18n="delivery.s2d">…</p>
+          </div>
+        </li>
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="delivery.s3t">Step 3</h3>
+            <p data-i18n="delivery.s3d">…</p>
+          </div>
+        </li>
+        <li class="lfd-step">
+          <div>
+            <h3 data-i18n="delivery.s4t">Step 4</h3>
+            <p data-i18n="delivery.s4d">…</p>
+          </div>
+        </li>
+      </ol>
+      <p class="lfd-delivery-note" data-i18n="delivery.note">…</p>
+    </section>
+
+    <section class="lfd-section lfd-container--wide lfd-chat-section" id="chat-demo">
+      <h2 class="lfd-h2" data-i18n="chat.sectionTitle">Talk to the intake assistant</h2>
+      <p class="lfd-lead lfd-chat-section__sub" data-i18n="chat.sectionSub">Describe your situation…</p>
+
+      <div class="lfd-chat-layout">
+        <div class="lfd-chat-main">
+          <div class="lfd-chat-card">
+            <header class="lfd-chat-head">
+              <div class="lfd-chat-head__top">
+                <div>
+                  <h3 class="lfd-chat-head__title" data-i18n="chat.assistantTitle">AI Intake Assistant</h3>
+                  <p class="lfd-chat-status">
+                    <span class="lfd-chat-status__dot" aria-hidden="true"></span>
+                    <span data-i18n="chat.status">Organizing information</span>
+                  </p>
+                </div>
+              </div>
+              <p class="lfd-chat-mini-disclaimer" data-i18n="chat.miniDisclaimer">This assistant does not…</p>
+            </header>
+
+            <div class="lfd-chat-progress" id="lfd-chat-progress" aria-hidden="true">
+              <div class="lfd-chat-progress__track">
+                <div class="lfd-chat-progress__bar"></div>
+              </div>
+              <span class="lfd-chat-progress__text">Intake progress</span>
+            </div>
+
+            <div class="lfd-chat-scroll" id="lfd-chat-scroll">
+              <div class="lfd-chat-msgs" id="lfd-chat-msgs"></div>
+              <div class="lfd-chat-typing" id="lfd-chat-typing" hidden>
+                <span class="lfd-typing-dot"></span>
+                <span class="lfd-typing-dot"></span>
+                <span class="lfd-typing-dot"></span>
+              </div>
+            </div>
+
+            <div class="lfd-chat-examples-block" id="lfd-chat-examples-block">
+              <p class="lfd-chat-examples-label" id="lfd-chat-examples-label" data-i18n="chat.examplesLabel">Try an example</p>
+              <div class="lfd-chat-examples" id="lfd-chat-examples"></div>
+            </div>
+            <div class="lfd-chat-chips-block" id="lfd-chat-chips-block">
+              <div class="lfd-chat-chips" id="lfd-chat-chips"></div>
+            </div>
+
+            <div class="lfd-upload-demo" id="lfd-upload-demo">
+              <p class="lfd-upload-demo__title" data-i18n="upload.title">Document upload preview</p>
+              <p class="lfd-upload-demo__sub" data-i18n="upload.sub">…</p>
+              <div class="lfd-upload-chips" id="lfd-upload-chips"></div>
+            </div>
+
+            <div class="lfd-chat-input-row">
+              <textarea
+                id="lfd-chat-input"
+                class="lfd-chat-input"
+                rows="2"
+                data-i18n-placeholder="chat.placeholder"
+                placeholder="Type your message…"
+                autocomplete="off"
+              ></textarea>
+              <div class="lfd-chat-input-actions">
+                <button type="button" class="lfd-btn lfd-btn--primary lfd-chat-send" id="lfd-chat-send" data-i18n="chat.send">Send</button>
+                <button type="button" class="lfd-chat-restart-inline" id="lfd-chat-restart-inline" data-i18n="chat.restartInline">
+                  Restart demo
+                </button>
+              </div>
+            </div>
+
+            <button type="button" class="lfd-btn lfd-btn--secondary lfd-generate-brief" id="lfd-generate-brief" hidden data-i18n="chat.generate">
+              Generate Attorney Brief
+            </button>
           </div>
         </div>
-        <div class="lfd-field">
-          <label for="lfd-next" data-i18n="form.next">Preferred next step</label>
-          <select id="lfd-next" name="next" required>
-            <option value="phone" data-i18n="form.nx.phone">Phone consultation</option>
-            <option value="video" data-i18n="form.nx.video">Video consultation</option>
-            <option value="inperson" data-i18n="form.nx.inperson">In-person meeting</option>
-            <option value="email" data-i18n="form.nx.email">Email follow-up</option>
-            <option value="unsure" data-i18n="form.nx.unsure">Not sure</option>
-          </select>
-        </div>
-        <button type="submit" class="lfd-btn lfd-btn--primary" data-i18n="form.submit">Generate Intake Summary</button>
-      </form>
 
-      <div class="lfd-summary" id="lfd-summary">
-        <h3 class="lfd-summary__title" data-i18n="sum.title">AI-organized intake summary</h3>
-        <div class="lfd-summary__body" id="lfd-summary-body"></div>
-        <p class="lfd-disclaimer" data-i18n="sum.disclaimer">This demo does not provide legal advice…</p>
+        <aside class="lfd-brief-panel">
+          <h3 class="lfd-brief-panel__title" data-i18n="chat.liveBriefTitle">Live Structured Extraction</h3>
+          <div class="lfd-brief-rows">
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.practice">Practice Area</span>
+                <span class="lfd-status-chip" data-brief-chip="practice" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="practice">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.urgency">Urgency</span>
+                <span class="lfd-status-chip" data-brief-chip="urgency" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="urgency">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.lang">Preferred Language</span>
+                <span class="lfd-status-chip" data-brief-chip="lang" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="lang">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.contact">Contact Method</span>
+                <span class="lfd-status-chip" data-brief-chip="contact" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="contact">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.facts">Key Facts</span>
+                <span class="lfd-status-chip" data-brief-chip="facts" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="facts">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.dates">Important Dates</span>
+                <span class="lfd-status-chip" data-brief-chip="dates" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="dates">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.docs">Documents Mentioned</span>
+                <span class="lfd-status-chip" data-brief-chip="docs" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="docs">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.missing">Missing Information</span>
+                <span class="lfd-status-chip" data-brief-chip="missing" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="missing">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.rec">Recommended Next Step</span>
+                <span class="lfd-status-chip" data-brief-chip="rec" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="rec">—</div>
+            </div>
+            <div class="lfd-brief-row">
+              <div class="lfd-brief-row__head">
+                <span data-i18n="live.nextq">Next Suggested Question</span>
+                <span class="lfd-status-chip" data-brief-chip="nextq" data-state="missing">—</span>
+              </div>
+              <div class="lfd-brief-row__value" data-brief-field="nextq">—</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="lfd-attorney-brief-out" id="lfd-attorney-brief-wrap" hidden>
+        <h3 class="lfd-h2" data-i18n="chat.briefTitle">Attorney intake brief</h3>
+        <pre class="lfd-attorney-brief-body" id="lfd-attorney-brief-body"></pre>
+        <p class="lfd-disclaimer" data-i18n="chat.disclaimer">This assistant does not provide legal advice…</p>
         <div class="lfd-after-actions">
-          <a class="lfd-btn lfd-btn--secondary" href="law-firm-admin.html" data-i18n="after.admin">View Admin Preview</a>
+          <a class="lfd-btn lfd-btn--secondary" href="law-firm-admin.html" id="lfd-after-admin" data-i18n="chat.afterAdmin">View Admin Preview</a>
           <a
             class="lfd-btn lfd-btn--primary"
             href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry"
-            data-i18n="after.email"
+            data-i18n="chat.afterEmail"
             >Email BoniStudio</a
           >
+          <button type="button" class="lfd-btn lfd-btn--secondary" id="lfd-chat-restart" data-i18n="chat.restart">Restart Demo</button>
         </div>
       </div>
     </section>
 
     <section class="lfd-section lfd-container">
-      <h2 class="lfd-h2" data-i18n="opt.title">Two ways to use this system</h2>
-      <div class="lfd-options">
-        <div class="lfd-option-card">
-          <h3 data-i18n="opt.at">Option A</h3>
-          <p class="lfd-lead" style="margin-bottom: 0.75rem" data-i18n="opt.ad">Best for law firms…</p>
-          <ul>
-            <li data-i18n="opt.ali1">Modern law firm website</li>
-            <li data-i18n="opt.ali2">Mobile-first experience</li>
-            <li data-i18n="opt.ali3">Bilingual pages</li>
-            <li data-i18n="opt.ali4">Practice area pages</li>
-            <li data-i18n="opt.ali5">Attorney profile section</li>
-            <li data-i18n="opt.ali6">AI intake workflow</li>
-            <li data-i18n="opt.ali7">Contact / booking flow</li>
-            <li data-i18n="opt.ali8">Basic SEO setup</li>
-            <li data-i18n="opt.ali9">Launch support</li>
+      <h2 class="lfd-h2" data-i18n="pkg.title">Available implementation options</h2>
+      <div class="lfd-pkg-grid">
+        <article class="lfd-pkg-card">
+          <h3 data-i18n="pkg.p1t">Website Modernization</h3>
+          <p class="lfd-lead lfd-pkg-card__lead" data-i18n="pkg.p1d">…</p>
+          <p class="lfd-pkg-includes" data-i18n="pkg.includes">Includes:</p>
+          <ul class="lfd-pkg-list">
+            <li data-i18n="pkg.p1i1">…</li>
+            <li data-i18n="pkg.p1i2">…</li>
+            <li data-i18n="pkg.p1i3">…</li>
+            <li data-i18n="pkg.p1i4">…</li>
+            <li data-i18n="pkg.p1i5">…</li>
+            <li data-i18n="pkg.p1i6">…</li>
+            <li data-i18n="pkg.p1i7">…</li>
           </ul>
           <a
-            class="lfd-btn lfd-btn--primary"
-            style="margin-top: 1rem"
-            href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry"
-            data-i18n="opt.acta"
-            >Request Website Upgrade</a
+            class="lfd-btn lfd-btn--primary lfd-pkg-cta"
+            href="https://buy.stripe.com/14A4gs5WB1Y2cRp4F6bAs02"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-stripe="websiteDeposit"
+            data-i18n="pkg.pay500"
+            >Pay $500 Deposit</a
           >
-        </div>
-        <div class="lfd-option-card">
-          <h3 data-i18n="opt.bt">Option B</h3>
-          <p class="lfd-lead" style="margin-bottom: 0.75rem" data-i18n="opt.bd">Best for law firms…</p>
-          <ul>
-            <li data-i18n="opt.bli1">Intake form module</li>
-            <li data-i18n="opt.bli2">AI summary generation</li>
-            <li data-i18n="opt.bli3">Admin preview</li>
-            <li data-i18n="opt.bli4">Email notification workflow</li>
-            <li data-i18n="opt.bli5">Document checklist</li>
-            <li data-i18n="opt.bli6">Website embed support</li>
-            <li data-i18n="opt.bli7">Minimal disruption</li>
+        </article>
+        <article class="lfd-pkg-card">
+          <h3 data-i18n="pkg.p2t">AI Intake Add-on</h3>
+          <p class="lfd-lead lfd-pkg-card__lead" data-i18n="pkg.p2d">…</p>
+          <p class="lfd-pkg-includes" data-i18n="pkg.includes">Includes:</p>
+          <ul class="lfd-pkg-list">
+            <li data-i18n="pkg.p2i1">…</li>
+            <li data-i18n="pkg.p2i2">…</li>
+            <li data-i18n="pkg.p2i3">…</li>
+            <li data-i18n="pkg.p2i4">…</li>
+            <li data-i18n="pkg.p2i5">…</li>
+            <li data-i18n="pkg.p2i6">…</li>
+            <li data-i18n="pkg.p2i7">…</li>
           </ul>
           <a
-            class="lfd-btn lfd-btn--secondary"
-            style="margin-top: 1rem"
-            href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry"
-            data-i18n="opt.bcta"
-            >Request AI Intake Add-on</a
+            class="lfd-btn lfd-btn--secondary lfd-pkg-cta"
+            href="https://buy.stripe.com/9B68wI84JgSWdVtdbCbAs01"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-stripe="aiIntakeDeposit"
+            data-i18n="pkg.pay800"
+            >Pay $800 Deposit</a
           >
-        </div>
+        </article>
+        <article class="lfd-pkg-card lfd-pkg-card--featured">
+          <h3 data-i18n="pkg.p3t">Complete Law Firm System</h3>
+          <p class="lfd-lead lfd-pkg-card__lead" data-i18n="pkg.p3d">…</p>
+          <p class="lfd-pkg-includes" data-i18n="pkg.includes">Includes:</p>
+          <ul class="lfd-pkg-list">
+            <li data-i18n="pkg.p3i1">…</li>
+            <li data-i18n="pkg.p3i2">…</li>
+            <li data-i18n="pkg.p3i3">…</li>
+            <li data-i18n="pkg.p3i4">…</li>
+            <li data-i18n="pkg.p3i5">…</li>
+          </ul>
+          <a
+            class="lfd-btn lfd-btn--primary lfd-pkg-cta"
+            href="https://buy.stripe.com/aFa6oA70FbyC9Fdb3ubAs00"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-stripe="completeSystemDeposit"
+            data-i18n="pkg.pay1500"
+            >Pay $1,500 Deposit</a
+          >
+        </article>
       </div>
     </section>
 
     <section class="lfd-section lfd-container">
-      <h2 class="lfd-h2" data-i18n="risk.title">This is not an AI lawyer.</h2>
+      <h2 class="lfd-h2" data-i18n="risk.title">This assistant does not provide legal advice.</h2>
       <p class="lfd-lead" data-i18n="risk.body">The system does not answer…</p>
     </section>
 
     <section class="lfd-section lfd-container lfd-section--tight">
       <h2 class="lfd-h2" data-i18n="final.title">Want to see how this could work…</h2>
       <p class="lfd-lead" data-i18n="final.sub">Send us your current website…</p>
-      <a class="lfd-btn lfd-btn--primary" href="mailto:bonistudio.core@gmail.com?subject=Law%20Firm%20AI%20Intake%20System%20Inquiry" data-i18n="final.cta">Email BoniStudio</a>
+      <div class="lfd-final-actions">
+        <a class="lfd-btn lfd-btn--secondary" href="../pricing.html" data-i18n="final.pricing">View Pricing</a>
+        <a class="lfd-btn lfd-btn--secondary" href="../contact.html" data-i18n="final.contact">Contact Us</a>
+        <a
+          class="lfd-btn lfd-btn--primary"
+          href="https://buy.stripe.com/aFa6oA70FbyC9Fdb3ubAs00"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-stripe="completeSystemDeposit"
+          data-i18n="final.payCompleteDeposit"
+          >Pay Complete System Deposit</a
+        >
+      </div>
     </section>
 
     <p class="lfd-footer-note" data-i18n="foot.disclaimer">This is a workflow demo…</p>

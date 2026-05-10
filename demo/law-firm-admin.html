@@ -31,9 +31,46 @@
     </header>
 
     <div id="lfd-admin-root">
+      <section class="lfd-section lfd-container lfd-admin-secure-banner">
+        <p class="lfd-admin-secure-banner__label" data-i18n="admin.secureBanner">Secure dashboard preview</p>
+        <p class="lfd-admin-secure-banner__text" data-i18n="admin.secureText">
+          In production, full intake details would only be available after authenticated login.
+        </p>
+      </section>
+
       <section class="lfd-section lfd-container">
         <h1 class="lfd-h1" data-i18n="admin.hero.title">Organized client information…</h1>
         <p class="lfd-lead" data-i18n="admin.hero.sub">Every intake becomes…</p>
+      </section>
+
+      <section class="lfd-section lfd-container lfd-email-preview-section">
+        <h2 class="lfd-h2" data-i18n="admin.emailCardTitle">Email alert preview</h2>
+        <div class="lfd-email-preview-card">
+          <p class="lfd-email-preview__label" data-i18n="admin.emailSubjLabel">Subject</p>
+          <p class="lfd-email-preview__subject" id="lfd-email-subject">—</p>
+          <p class="lfd-email-preview__label" data-i18n="admin.emailBodyLabel">Body</p>
+          <pre class="lfd-email-preview__body" id="lfd-email-body">—</pre>
+        </div>
+      </section>
+
+      <section class="lfd-section lfd-container--wide lfd-qset-section">
+        <h2 class="lfd-h2" data-i18n="admin.qsetTitle">Practice area question sets</h2>
+        <p class="lfd-lead" data-i18n="admin.qsetHint">Each area can be customized for your firm.</p>
+        <div class="lfd-qset-tabs" id="lfd-qset-tabs" role="tablist"></div>
+        <div class="lfd-qset-panels">
+          <div class="lfd-qset-block">
+            <h4 class="lfd-qset-block__title" data-i18n="admin.qset.q">Sample questions</h4>
+            <div class="lfd-qset-block__body" id="lfd-qset-q"></div>
+          </div>
+          <div class="lfd-qset-block">
+            <h4 class="lfd-qset-block__title" data-i18n="admin.qset.docs">Required documents</h4>
+            <div class="lfd-qset-block__body" id="lfd-qset-d"></div>
+          </div>
+          <div class="lfd-qset-block">
+            <h4 class="lfd-qset-block__title" data-i18n="admin.qset.logic">Missing info logic</h4>
+            <div class="lfd-qset-block__body" id="lfd-qset-l"></div>
+          </div>
+        </div>
       </section>
 
       <section class="lfd-section lfd-container--wide" style="padding-top: 0">
@@ -73,10 +110,6 @@
         <p id="lfd-p-info"></p>
       </div>
       <div class="lfd-panel__section">
-        <h4 data-i18n="panel.contact">Contact Method</h4>
-        <p id="lfd-p-contact"></p>
-      </div>
-      <div class="lfd-panel__section">
         <h4 data-i18n="panel.area">Practice Area</h4>
         <p id="lfd-p-area"></p>
       </div>
@@ -85,20 +118,40 @@
         <p id="lfd-p-urgency"></p>
       </div>
       <div class="lfd-panel__section">
-        <h4 data-i18n="panel.ai">AI Summary</h4>
-        <p id="lfd-p-ai" style="white-space: pre-wrap"></p>
+        <h4 data-i18n="panel.ai">Attorney Brief</h4>
+        <div id="lfd-p-ai-brief" class="lfd-brief-cards"></div>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.facts">Key Facts</h4>
+        <p id="lfd-p-facts" style="white-space: pre-wrap"></p>
       </div>
       <div class="lfd-panel__section">
         <h4 data-i18n="panel.dates">Important Dates</h4>
         <p id="lfd-p-dates"></p>
       </div>
       <div class="lfd-panel__section">
-        <h4 data-i18n="panel.docs">Available Documents</h4>
+        <h4 data-i18n="panel.docs">Documents Mentioned</h4>
         <p id="lfd-p-docs" style="white-space: pre-wrap"></p>
       </div>
       <div class="lfd-panel__section">
         <h4 data-i18n="panel.missing">Missing Information</h4>
         <p id="lfd-p-missing" style="white-space: pre-wrap"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.contact">Contact Preference</h4>
+        <p id="lfd-p-contact"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.transcript">Chat Transcript Preview</h4>
+        <p id="lfd-p-transcript" style="white-space: pre-wrap"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.followup">Practice-area follow-up</h4>
+        <p id="lfd-p-followup" style="white-space: pre-wrap"></p>
+      </div>
+      <div class="lfd-panel__section">
+        <h4 data-i18n="panel.addclient">Additional client notes</h4>
+        <p id="lfd-p-addclient" style="white-space: pre-wrap"></p>
       </div>
       <div class="lfd-panel__section">
         <h4 data-i18n="panel.rec">Recommended Follow-up</h4>

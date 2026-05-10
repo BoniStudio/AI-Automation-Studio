@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.termsTitle">Terms of Service — BoniStudio</title>
+    <meta name="description" data-i18n="meta.termsDesc" content="Terms of service for BoniStudio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__mesh"></div>
+      <div class="ambient__grid"></div>
+      <div class="ambient__flow ambient__flow--1"></div>
+      <div class="ambient__flow ambient__flow--2"></div>
+      <div class="ambient__nodes">
+        <span class="ambient__node"></span>
+        <span class="ambient__node"></span>
+        <span class="ambient__node"></span>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header__inner container">
+        <a class="brand" href="index.html#top" aria-label="BoniStudio home">
+          <span class="brand__name" data-i18n="nav.brand">BoniStudio</span>
+          <span class="brand__tag" data-i18n="nav.tagline">AI Automation Studio</span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html#services" data-i18n="nav.services">Services</a></li>
+            <li><a class="nav__link" href="demo/law-firm-intake.html" data-i18n="nav.demo">Demo</a></li>
+            <li><a class="nav__link" href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <div class="nav__actions">
+            <button type="button" class="btn btn--ghost lang-toggle" id="langToggle" aria-label="Switch language">
+              <span id="langToggleLabel">中文</span>
+            </button>
+            <a class="btn btn--primary btn--sm" href="contact.html" data-i18n="nav.bookDemo">Book a Demo</a>
+          </div>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Open menu"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-main container legal-page" id="top">
+      <header class="page-hero">
+        <h1 class="page-hero__title" data-i18n="terms.title">Terms of Service</h1>
+        <p class="legal-updated" data-i18n="terms.updated">Last updated: May 2026</p>
+      </header>
+
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s1h">1. Services</h2>
+        <p data-i18n="terms.s1p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s2h">2. Project estimates</h2>
+        <p data-i18n="terms.s2p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s3h">3. Payments</h2>
+        <p data-i18n="terms.s3p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s4h">4. Deposits and final payment</h2>
+        <p data-i18n="terms.s4p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s5h">5. Client responsibilities</h2>
+        <p data-i18n="terms.s5p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s6h">6. Demo limitations</h2>
+        <p data-i18n="terms.s6p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s7h">7. No legal advice</h2>
+        <p data-i18n="terms.s7p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s8h">8. Intellectual property</h2>
+        <p data-i18n="terms.s8p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s9h">9. Limitation of liability</h2>
+        <p data-i18n="terms.s9p">…</p>
+      </article>
+      <article class="legal-card reveal">
+        <h2 data-i18n="terms.s10h">10. Contact</h2>
+        <p data-i18n="terms.s10p">…</p>
+      </article>
+    </main>
+
+    <footer class="footer site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand-block">
+          <p class="footer__brand">BoniStudio</p>
+          <p class="site-footer__tag" data-i18n="nav.tagline">AI Automation Studio</p>
+          <p class="site-footer__tagline" data-i18n="footer.tagline">
+            Modern websites and AI-assisted workflow systems for professional service businesses.
+          </p>
+          <p class="site-footer__meta" data-i18n="footer.location">Seattle, WA</p>
+          <p class="site-footer__meta">
+            <a href="mailto:bonistudio.core@gmail.com">bonistudio.core@gmail.com</a>
+          </p>
+        </div>
+        <div class="site-footer__nav-block">
+          <p class="site-footer__nav-title" data-i18n="footer.navTitle">Navigate</p>
+          <ul class="site-footer__links">
+            <li><a href="index.html#top" data-i18n="footer.linkHome">Home</a></li>
+            <li><a href="pricing.html" data-i18n="footer.linkPricing">Pricing</a></li>
+            <li><a href="contact.html" data-i18n="footer.linkContact">Contact</a></li>
+            <li><a href="privacy.html" data-i18n="footer.linkPrivacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="footer.linkTerms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">© BoniStudio. AI Automation Studio.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
