@@ -23,7 +23,7 @@
         "AI-powered websites, intake systems, and automation tools for modern businesses, creators, and professional service teams.",
       "meta.pricingTitle": "Pricing — BoniStudio",
       "meta.pricingDesc":
-        "Project-based pricing for law firm websites and AI-assisted intake systems. Deposits via Stripe Payment Links.",
+        "Starting prices and deposits for website modernization, AI intake systems, and complete firm automation. Stripe Payment Links.",
       "meta.contactTitle": "Contact — BoniStudio",
       "meta.contactDesc":
         "Contact BoniStudio for website modernization, AI intake systems, and automation for professional service businesses.",
@@ -153,7 +153,7 @@
 
       "footer.copy": "© BoniStudio. AI Automation Studio.",
       "footer.tagline":
-        "Modern websites and AI-assisted workflow systems for professional service businesses.",
+        "Modern websites and AI-assisted intake systems for professional service businesses.",
       "footer.location": "Seattle, WA",
       "footer.email": "bonistudio.core@gmail.com",
       "footer.navTitle": "Navigate",
@@ -162,25 +162,43 @@
       "footer.linkContact": "Contact",
       "footer.linkPrivacy": "Privacy Policy",
       "footer.linkTerms": "Terms of Service",
+      "footer.linkDemo": "Law Firm Demo",
+
+      "trust.title": "Built with privacy in mind",
+      "trust.lead":
+        "The demo does not collect real client information. A production version would use authenticated access, secure database storage, controlled document access, and email alerts that avoid exposing sensitive details.",
+      "trust.b1": "No legal advice from AI",
+      "trust.b2": "Attorney review required",
+      "trust.b3": "Secure dashboard model",
+      "trust.b4": "Stripe handles payments",
+      "trust.b5": "Demo data stays local in browser",
 
       "home.pricingTeaser.title": "Simple project-based pricing",
-      "home.pricingTeaser.lead": "Transparent starting ranges for law firm websites and AI-assisted intake.",
+      "home.pricingTeaser.lead":
+        "Starting project totals and deposits — see pricing for full scope and what is included.",
       "home.pricingTeaser.c1t": "Website Modernization",
-      "home.pricingTeaser.c1p": "from $500",
-      "home.pricingTeaser.c2t": "AI Intake Add-on",
-      "home.pricingTeaser.c2p": "from $800",
-      "home.pricingTeaser.c3t": "Complete System",
-      "home.pricingTeaser.c3p": "from $1,500",
+      "home.pricingTeaser.c1p": "Starting at $1,000",
+      "home.pricingTeaser.c1d": "$500 deposit to start",
+      "home.pricingTeaser.c2t": "AI Intake System",
+      "home.pricingTeaser.c2p": "Starting at $2,000",
+      "home.pricingTeaser.c2d": "$800 deposit to start",
+      "home.pricingTeaser.c3t": "Complete Firm Automation",
+      "home.pricingTeaser.c3p": "Starting at $3,500",
+      "home.pricingTeaser.c3d": "$1,500 deposit to start",
       "home.pricingTeaser.payDeposit": "Pay Deposit",
       "home.pricingTeaser.cta": "View Pricing",
 
       "pricing.title": "Pricing",
       "pricing.subtitle":
-        "Simple project-based pricing for law firm websites and AI-assisted intake systems.",
-      "pricing.depositNote":
-        "Most projects begin with a 50% deposit. Final payment is due before launch or delivery.",
+        "Starting prices show typical project totals; deposits reserve your place and kick off discovery. Final scope and balance are confirmed after we review your site and workflow.",
       "pricing.paymentNote":
-        "Deposits are processed securely through Stripe. Most projects begin after a deposit is paid. Final payment is due before launch or delivery.",
+        "Deposits secure project kickoff and are credited toward the final project total. After reviewing your website and workflow, we provide a final project scope and remaining balance invoice through Stripe.",
+      "pricing.notIncluded": "Not included:",
+      "pricing.flowTitle": "How payment works",
+      "pricing.flow1": "Choose a package and pay the deposit",
+      "pricing.flow2": "We review your current website and workflow",
+      "pricing.flow3": "You receive a final scope and timeline",
+      "pricing.flow4": "Remaining balance is paid before launch or delivery",
       "pricing.includes": "Includes:",
       "pricing.pay500": "Pay $500 Deposit",
       "pricing.pay800": "Pay $800 Deposit",
@@ -189,34 +207,42 @@
       "pricing.maintenance.price": "$99–$299 / month",
       "pricing.maintenance.cta": "Request Monthly Plan",
       "pricing.p1.title": "Website Modernization",
-      "pricing.p1.price": "Starting at $500–$1,200",
-      "pricing.p1.desc": "For law firms with outdated websites or no clear online consultation flow.",
+      "pricing.p1.start": "Starting at $1,000",
+      "pricing.p1.deposit": "$500 deposit required to start",
       "pricing.p1.i1": "Modern website redesign",
-      "pricing.p1.i2": "Mobile-first layout",
+      "pricing.p1.i2": "Mobile responsive layout",
       "pricing.p1.i3": "Practice area pages",
       "pricing.p1.i4": "Attorney profile section",
       "pricing.p1.i5": "Contact / consultation CTA",
       "pricing.p1.i6": "Basic SEO setup",
       "pricing.p1.i7": "Launch support",
-      "pricing.p2.title": "AI Intake Add-on",
-      "pricing.p2.price": "Starting at $800–$1,500",
-      "pricing.p2.desc": "For law firms that already have a website and want to add AI-assisted intake.",
-      "pricing.p2.i1": "Embedded AI chat intake assistant",
+      "pricing.p1.n1": "AI intake system",
+      "pricing.p1.n2": "Secure dashboard",
+      "pricing.p1.n3": "Custom backend automation",
+      "pricing.p2.title": "AI Intake System",
+      "pricing.p2.start": "Starting at $2,000",
+      "pricing.p2.deposit": "$800 deposit required to start",
+      "pricing.p2.i1": "AI chat intake assistant",
       "pricing.p2.i2": "Structured attorney brief",
       "pricing.p2.i3": "Practice area question sets",
       "pricing.p2.i4": "Email alert workflow",
       "pricing.p2.i5": "Secure dashboard preview",
       "pricing.p2.i6": "Document checklist",
-      "pricing.p2.i7": "Bilingual summary",
-      "pricing.p3.title": "Complete Law Firm System",
-      "pricing.p3.price": "Starting at $1,500–$2,500",
-      "pricing.p3.desc": "For law firms that want a full modern website plus AI intake workflow.",
-      "pricing.p3.i1": "Everything in Website Modernization",
-      "pricing.p3.i2": "Everything in AI Intake Add-on",
-      "pricing.p3.i3": "Custom intake flow setup",
-      "pricing.p3.i4": "Practice area configuration",
-      "pricing.p3.i5": "Launch support",
-      "pricing.p3.i6": "Optional monthly maintenance",
+      "pricing.p2.i7": "Bilingual summaries",
+      "pricing.p2.n1": "Full website redesign",
+      "pricing.p2.n2": "Advanced CRM integration",
+      "pricing.p2.n3": "Custom multi-user backend",
+      "pricing.p3.title": "Complete Firm Automation System",
+      "pricing.p3.start": "Starting at $3,500",
+      "pricing.p3.deposit": "$1,500 deposit required to start",
+      "pricing.p3.i1": "Full website modernization",
+      "pricing.p3.i2": "AI intake assistant",
+      "pricing.p3.i3": "Attorney dashboard preview",
+      "pricing.p3.i4": "Email notification workflow",
+      "pricing.p3.i5": "Practice area customization",
+      "pricing.p3.i6": "Intake flow customization",
+      "pricing.p3.i7": "Launch support",
+      "pricing.p3.i8": "Optional monthly maintenance",
       "pricing.maint.i1": "Small content updates",
       "pricing.maint.i2": "Intake prompt adjustments",
       "pricing.maint.i3": "Question set updates",
@@ -225,7 +251,7 @@
 
       "contactPage.title": "Contact BoniStudio",
       "contactPage.subtitle":
-        "Send your current website, business workflow, or project idea. We will recommend whether you need a website upgrade, AI intake add-on, or complete system.",
+        "Send your current website, business workflow, or project idea. We will recommend whether you need website modernization, an AI intake system, or complete firm automation.",
       "contactPage.location": "Seattle, WA",
       "contactPage.emailUs": "Email Us",
       "contactPage.viewPricing": "View Pricing",
@@ -236,13 +262,13 @@
       "contactPage.email": "Email",
       "contactPage.company": "Company",
       "contactPage.website": "Website",
-      "contactPage.projectType": "Project type",
-      "contactPage.typeHint": "Select a project type",
+      "contactPage.package": "Package",
+      "contactPage.typeHint": "Select a package",
       "contactPage.message": "Message",
       "contactPage.submit": "Send via email",
       "contactPage.opt.web": "Website Modernization",
-      "contactPage.opt.ai": "AI Intake Add-on",
-      "contactPage.opt.complete": "Complete Law Firm System",
+      "contactPage.opt.ai": "AI Intake System",
+      "contactPage.opt.complete": "Complete Firm Automation",
       "contactPage.opt.other": "Other",
       "contactPage.readyTitle": "Ready to start?",
       "contactPage.payWebsiteDeposit": "Pay Website Deposit",
@@ -257,6 +283,8 @@
       "privacy.s2h": "2. How we use information",
       "privacy.s2p":
         "We use contact information to respond to inquiries, provide estimates, and deliver agreed services. We do not sell your personal information.",
+      "privacy.demoBan":
+        "This website demo is not intended for submitting real sensitive legal, financial, medical, or personal information.",
       "privacy.s3h": "3. Demo limitations",
       "privacy.s3p":
         "This website and demo do not collect sensitive client information for production use. The demo may store temporary example data in your browser localStorage only for demonstration purposes.",
@@ -297,7 +325,7 @@
         "Demonstrations illustrate workflows and are not production systems unless separately contracted. Demo data may be stored locally in your browser for illustration.",
       "terms.s7h": "7. No legal advice",
       "terms.s7p":
-        "Our AI-assisted intake demos and systems are designed to organize information. They do not provide legal advice, financial advice, medical advice, or professional judgment.",
+        "AI-assisted features are for organizing information only and do not provide legal advice or professional judgment.",
       "terms.s8h": "8. Intellectual property",
       "terms.s8p":
         "Unless otherwise agreed in writing, deliverables and license terms will be defined in your project agreement. Third-party materials may remain subject to their licensors.",
@@ -318,7 +346,7 @@
         "面向现代企业、创作者与专业团队的 AI 官网、咨询收集系统与自动化工具。",
       "meta.pricingTitle": "定价方案 — BoniStudio",
       "meta.pricingDesc":
-        "面向律师事务所官网升级与 AI 咨询系统的项目制价格方案。定金通过 Stripe Payment Links 支付。",
+        "官网现代化、AI 咨询接待系统与完整律所自动化方案的起价与定金说明。通过 Stripe Payment Links 支付定金。",
       "meta.contactTitle": "联系我们 — BoniStudio",
       "meta.contactDesc":
         "联系 BoniStudio，获取官网现代化、AI 咨询收集系统与自动化方案。",
@@ -446,7 +474,7 @@
 
       "footer.copy": "© BoniStudio。AI 自动化工作室。",
       "footer.tagline":
-        "面向专业服务机构的现代化网站与 AI 辅助工作流系统。",
+        "为专业服务机构打造现代化网站与 AI 辅助咨询接待系统。",
       "footer.location": "西雅图，华盛顿州",
       "footer.email": "bonistudio.core@gmail.com",
       "footer.navTitle": "导航",
@@ -455,25 +483,43 @@
       "footer.linkContact": "联系我们",
       "footer.linkPrivacy": "隐私政策",
       "footer.linkTerms": "服务条款",
+      "footer.linkDemo": "律所 Demo",
+
+      "trust.title": "以隐私与安全为前提设计",
+      "trust.lead":
+        "当前 Demo 不用于收集真实客户资料。真实版本会使用登录验证、安全数据库存储、受控文件访问，以及避免暴露敏感细节的邮件提醒。",
+      "trust.b1": "AI 不提供法律建议",
+      "trust.b2": "需要律师审阅",
+      "trust.b3": "安全后台模型",
+      "trust.b4": "付款由 Stripe 处理",
+      "trust.b5": "演示数据仅保存在浏览器本地",
 
       "home.pricingTeaser.title": "清晰的项目制价格",
-      "home.pricingTeaser.lead": "律所官网与 AI 咨询系统的透明起步区间。",
+      "home.pricingTeaser.lead":
+        "项目总价与定金起步说明 — 详见定价页了解包含与不包含项。",
       "home.pricingTeaser.c1t": "官网现代化升级",
-      "home.pricingTeaser.c1p": "$500 起",
-      "home.pricingTeaser.c2t": "AI 咨询模块",
-      "home.pricingTeaser.c2p": "$800 起",
-      "home.pricingTeaser.c3t": "完整律所系统",
-      "home.pricingTeaser.c3p": "$1,500 起",
+      "home.pricingTeaser.c1p": "起价 $1,000",
+      "home.pricingTeaser.c1d": "启动项目需支付 $500 定金",
+      "home.pricingTeaser.c2t": "AI 咨询接待系统",
+      "home.pricingTeaser.c2p": "起价 $2,000",
+      "home.pricingTeaser.c2d": "启动项目需支付 $800 定金",
+      "home.pricingTeaser.c3t": "完整律所自动化系统",
+      "home.pricingTeaser.c3p": "起价 $3,500",
+      "home.pricingTeaser.c3d": "启动项目需支付 $1,500 定金",
       "home.pricingTeaser.payDeposit": "支付定金",
       "home.pricingTeaser.cta": "查看定价",
 
       "pricing.title": "定价方案",
       "pricing.subtitle":
-        "面向律师事务所官网升级与 AI 咨询系统的项目制价格方案。",
-      "pricing.depositNote":
-        "大多数项目以 50% 定金开始，尾款在上线或交付前支付。",
+        "起价为常见项目总价区间；定金用于预留档期并启动沟通。我们会在查看你的网站与业务流程后确认最终范围与尾款。",
       "pricing.paymentNote":
-        "定金通过 Stripe 安全处理。大多数项目在支付定金后开始，尾款在上线或交付前支付。",
+        "定金用于启动项目，并会计入最终项目总价。我们会在查看你的网站与业务流程后，提供最终项目范围与剩余尾款发票。",
+      "pricing.notIncluded": "不包含：",
+      "pricing.flowTitle": "付款流程",
+      "pricing.flow1": "选择方案并支付定金",
+      "pricing.flow2": "我们查看你当前的网站与业务流程",
+      "pricing.flow3": "你会收到最终项目范围与时间安排",
+      "pricing.flow4": "尾款在上线或交付前支付",
       "pricing.includes": "包含：",
       "pricing.pay500": "支付 $500 定金",
       "pricing.pay800": "支付 $800 定金",
@@ -482,37 +528,42 @@
       "pricing.maintenance.price": "$99–$299 / 月",
       "pricing.maintenance.cta": "咨询月度方案",
       "pricing.p1.title": "官网现代化升级",
-      "pricing.p1.price": "起价 $500–$1,200",
-      "pricing.p1.desc":
-        "适合网站老旧、移动端体验差，或缺少清晰线上咨询流程的律师事务所。",
+      "pricing.p1.start": "起价 $1,000",
+      "pricing.p1.deposit": "启动项目需支付 $500 定金",
       "pricing.p1.i1": "现代化官网改版",
-      "pricing.p1.i2": "移动端优先布局",
+      "pricing.p1.i2": "移动端适配布局",
       "pricing.p1.i3": "法律服务领域页面",
       "pricing.p1.i4": "律师介绍区域",
       "pricing.p1.i5": "联系 / 咨询入口",
       "pricing.p1.i6": "基础 SEO 设置",
       "pricing.p1.i7": "上线支持",
-      "pricing.p2.title": "AI 咨询模块",
-      "pricing.p2.price": "起价 $800–$1,500",
-      "pricing.p2.desc":
-        "适合已有官网，但希望加入 AI 聊天式咨询收集能力的律师事务所。",
-      "pricing.p2.i1": "嵌入式 AI 聊天咨询助手",
+      "pricing.p1.n1": "AI 咨询接待系统",
+      "pricing.p1.n2": "安全后台",
+      "pricing.p1.n3": "自定义后端自动化",
+      "pricing.p2.title": "AI 咨询接待系统",
+      "pricing.p2.start": "起价 $2,000",
+      "pricing.p2.deposit": "启动项目需支付 $800 定金",
+      "pricing.p2.i1": "AI 聊天咨询接待助手",
       "pricing.p2.i2": "结构化律师简报",
       "pricing.p2.i3": "法律领域问题集",
       "pricing.p2.i4": "邮件提醒流程",
       "pricing.p2.i5": "安全后台预览",
       "pricing.p2.i6": "文件清单",
       "pricing.p2.i7": "中英双语摘要",
-      "pricing.p3.title": "完整律所系统",
-      "pricing.p3.price": "起价 $1,500–$2,500",
-      "pricing.p3.desc":
-        "适合希望同时升级官网与 AI 咨询流程的律师事务所。",
-      "pricing.p3.i1": "官网现代化升级全部内容",
-      "pricing.p3.i2": "AI 咨询模块全部内容",
-      "pricing.p3.i3": "自定义咨询流程",
-      "pricing.p3.i4": "法律领域配置",
-      "pricing.p3.i5": "上线支持",
-      "pricing.p3.i6": "可选月度维护",
+      "pricing.p2.n1": "完整官网改版",
+      "pricing.p2.n2": "高级 CRM 集成",
+      "pricing.p2.n3": "自定义多用户后端",
+      "pricing.p3.title": "完整律所自动化系统",
+      "pricing.p3.start": "起价 $3,500",
+      "pricing.p3.deposit": "启动项目需支付 $1,500 定金",
+      "pricing.p3.i1": "完整官网现代化升级",
+      "pricing.p3.i2": "AI 咨询接待助手",
+      "pricing.p3.i3": "律师后台预览",
+      "pricing.p3.i4": "邮件通知流程",
+      "pricing.p3.i5": "法律服务领域定制",
+      "pricing.p3.i6": "咨询流程定制",
+      "pricing.p3.i7": "上线支持",
+      "pricing.p3.i8": "可选月度维护",
       "pricing.maint.i1": "小型内容更新",
       "pricing.maint.i2": "咨询提示词调整",
       "pricing.maint.i3": "问题集更新",
@@ -521,7 +572,7 @@
 
       "contactPage.title": "联系 BoniStudio",
       "contactPage.subtitle":
-        "发送你当前的网站、业务流程或项目想法。我们会判断你更适合官网升级、AI 咨询模块，还是完整系统。",
+        "发送你当前的网站、业务流程或项目想法。我们会判断你更适合官网现代化、AI 咨询接待系统，还是完整律所自动化方案。",
       "contactPage.location": "西雅图，华盛顿州",
       "contactPage.emailUs": "发送邮件",
       "contactPage.viewPricing": "查看定价",
@@ -532,13 +583,13 @@
       "contactPage.email": "邮箱",
       "contactPage.company": "公司",
       "contactPage.website": "网站",
-      "contactPage.projectType": "项目类型",
-      "contactPage.typeHint": "请选择项目类型",
+      "contactPage.package": "方案",
+      "contactPage.typeHint": "请选择方案",
       "contactPage.message": "留言",
       "contactPage.submit": "通过邮件发送",
       "contactPage.opt.web": "官网现代化升级",
-      "contactPage.opt.ai": "AI 咨询模块",
-      "contactPage.opt.complete": "完整律所系统",
+      "contactPage.opt.ai": "AI 咨询接待系统",
+      "contactPage.opt.complete": "完整律所自动化系统",
       "contactPage.opt.other": "其他",
       "contactPage.readyTitle": "准备开始？",
       "contactPage.payWebsiteDeposit": "支付官网定金",
@@ -553,6 +604,8 @@
       "privacy.s2h": "2. 我们如何使用信息",
       "privacy.s2p":
         "我们使用联系信息用于回复咨询、提供报价与履行约定服务。我们不会出售你的个人信息。",
+      "privacy.demoBan":
+        "本网站 Demo 不应用于提交真实敏感法律、财务、医疗或个人信息。",
       "privacy.s3h": "3. Demo 说明",
       "privacy.s3p":
         "本网站与 Demo 不用于收集真实敏感客户资料。Demo 可能仅在你的浏览器 localStorage 中临时保存示例数据，用于演示。",
@@ -593,7 +646,7 @@
         "演示用于展示流程，除非另行签约，不构成生产系统。演示数据可仅保存在你的浏览器中用于说明。",
       "terms.s7h": "7. 不提供法律等专业建议",
       "terms.s7p":
-        "我们的 AI 辅助咨询 Demo 与系统用于整理信息，不提供法律、财务、医疗建议，也不替代专业判断。",
+        "AI 辅助功能仅用于整理信息，不提供法律建议或专业判断。",
       "terms.s8h": "8. 知识产权",
       "terms.s8p":
         "除非另行书面约定，交付物与许可范围以项目协议为准。第三方素材可能仍受其许可方约束。",
@@ -726,10 +779,10 @@
       var email = get("email");
       var company = get("company");
       var website = get("website");
-      var typeSel = form.querySelector('[name="projectType"]');
-      var projectType = "";
+      var typeSel = form.querySelector('[name="package"]');
+      var pkgLabel = "";
       if (typeSel && typeSel.options && typeSel.selectedIndex >= 0) {
-        projectType = String(typeSel.options[typeSel.selectedIndex].textContent || "").trim();
+        pkgLabel = String(typeSel.options[typeSel.selectedIndex].textContent || "").trim();
       }
       var message = get("message");
       var subject =
@@ -750,8 +803,8 @@
         (lang === "zh" ? "网站：" : "Website: ") +
         website +
         nl +
-        (lang === "zh" ? "项目类型：" : "Project type: ") +
-        projectType +
+        (lang === "zh" ? "方案：" : "Package: ") +
+        pkgLabel +
         nl +
         nl +
         (lang === "zh" ? "留言：" : "Message:") +

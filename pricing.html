@@ -68,31 +68,58 @@
       <header class="page-hero">
         <h1 class="page-hero__title" data-i18n="pricing.title">Pricing</h1>
         <p class="page-hero__lead" data-i18n="pricing.subtitle">
-          Simple project-based pricing for law firm websites and AI-assisted intake systems.
+          Starting prices show typical project totals; deposits reserve your place and kick off discovery.
         </p>
       </header>
 
-      <p class="pricing-page__note" data-i18n="pricing.depositNote">
-        Most projects begin with a 50% deposit. Final payment is due before launch or delivery.
-      </p>
       <p class="pricing-page__note pricing-page__note--muted" data-i18n="pricing.paymentNote">
-        Deposits are processed securely through Stripe.
+        Deposits secure project kickoff and are credited toward the final project total.
       </p>
+
+      <section class="pricing-flow reveal" aria-labelledby="pricing-flow-title">
+        <h2 id="pricing-flow-title" class="pricing-flow__title" data-i18n="pricing.flowTitle">How payment works</h2>
+        <ol class="pricing-flow__steps">
+          <li data-i18n="pricing.flow1">Choose a package and pay the deposit</li>
+          <li data-i18n="pricing.flow2">We review your current website and workflow</li>
+          <li data-i18n="pricing.flow3">You receive a final scope and timeline</li>
+          <li data-i18n="pricing.flow4">Remaining balance is paid before launch or delivery</li>
+        </ol>
+      </section>
+
+      <section class="trust trust--compact reveal" aria-labelledby="trust-pricing-title">
+        <h2 id="trust-pricing-title" class="trust__title" data-i18n="trust.title">Built with privacy in mind</h2>
+        <p class="trust__lead" data-i18n="trust.lead">
+          The demo does not collect real client information.
+        </p>
+        <ul class="trust__bullets">
+          <li data-i18n="trust.b1">No legal advice from AI</li>
+          <li data-i18n="trust.b2">Attorney review required</li>
+          <li data-i18n="trust.b3">Secure dashboard model</li>
+          <li data-i18n="trust.b4">Stripe handles payments</li>
+          <li data-i18n="trust.b5">Demo data stays local in browser</li>
+        </ul>
+      </section>
 
       <div class="pricing-page__grid" id="stripe-deposit">
         <article class="pricing-card">
           <h2 class="pricing-card__title" data-i18n="pricing.p1.title">Website Modernization</h2>
-          <p class="pricing-card__price" data-i18n="pricing.p1.price">Starting at $500–$1,200</p>
-          <p class="pricing-card__desc" data-i18n="pricing.p1.desc">For law firms with outdated websites or no clear online consultation flow.</p>
+          <p class="pricing-card__start" data-i18n="pricing.p1.start">Starting at $1,000</p>
+          <p class="pricing-card__deposit" data-i18n="pricing.p1.deposit">$500 deposit required to start</p>
           <p class="pricing-card__includes" data-i18n="pricing.includes">Includes:</p>
           <ul class="pricing-card__list">
             <li data-i18n="pricing.p1.i1">Modern website redesign</li>
-            <li data-i18n="pricing.p1.i2">Mobile-first layout</li>
+            <li data-i18n="pricing.p1.i2">Mobile responsive layout</li>
             <li data-i18n="pricing.p1.i3">Practice area pages</li>
             <li data-i18n="pricing.p1.i4">Attorney profile section</li>
             <li data-i18n="pricing.p1.i5">Contact / consultation CTA</li>
             <li data-i18n="pricing.p1.i6">Basic SEO setup</li>
             <li data-i18n="pricing.p1.i7">Launch support</li>
+          </ul>
+          <p class="pricing-card__includes pricing-card__includes--not" data-i18n="pricing.notIncluded">Not included:</p>
+          <ul class="pricing-card__list pricing-card__list--not">
+            <li data-i18n="pricing.p1.n1">AI intake system</li>
+            <li data-i18n="pricing.p1.n2">Secure dashboard</li>
+            <li data-i18n="pricing.p1.n3">Custom backend automation</li>
           </ul>
           <a
             class="btn btn--primary pricing-card__cta"
@@ -106,18 +133,24 @@
         </article>
 
         <article class="pricing-card">
-          <h2 class="pricing-card__title" data-i18n="pricing.p2.title">AI Intake Add-on</h2>
-          <p class="pricing-card__price" data-i18n="pricing.p2.price">Starting at $800–$1,500</p>
-          <p class="pricing-card__desc" data-i18n="pricing.p2.desc">For law firms that already have a website and want to add AI-assisted intake.</p>
+          <h2 class="pricing-card__title" data-i18n="pricing.p2.title">AI Intake System</h2>
+          <p class="pricing-card__start" data-i18n="pricing.p2.start">Starting at $2,000</p>
+          <p class="pricing-card__deposit" data-i18n="pricing.p2.deposit">$800 deposit required to start</p>
           <p class="pricing-card__includes" data-i18n="pricing.includes">Includes:</p>
           <ul class="pricing-card__list">
-            <li data-i18n="pricing.p2.i1">Embedded AI chat intake assistant</li>
+            <li data-i18n="pricing.p2.i1">AI chat intake assistant</li>
             <li data-i18n="pricing.p2.i2">Structured attorney brief</li>
             <li data-i18n="pricing.p2.i3">Practice area question sets</li>
             <li data-i18n="pricing.p2.i4">Email alert workflow</li>
             <li data-i18n="pricing.p2.i5">Secure dashboard preview</li>
             <li data-i18n="pricing.p2.i6">Document checklist</li>
-            <li data-i18n="pricing.p2.i7">Bilingual summary</li>
+            <li data-i18n="pricing.p2.i7">Bilingual summaries</li>
+          </ul>
+          <p class="pricing-card__includes pricing-card__includes--not" data-i18n="pricing.notIncluded">Not included:</p>
+          <ul class="pricing-card__list pricing-card__list--not">
+            <li data-i18n="pricing.p2.n1">Full website redesign</li>
+            <li data-i18n="pricing.p2.n2">Advanced CRM integration</li>
+            <li data-i18n="pricing.p2.n3">Custom multi-user backend</li>
           </ul>
           <a
             class="btn btn--secondary pricing-card__cta"
@@ -131,17 +164,19 @@
         </article>
 
         <article class="pricing-card pricing-card--featured">
-          <h2 class="pricing-card__title" data-i18n="pricing.p3.title">Complete Law Firm System</h2>
-          <p class="pricing-card__price" data-i18n="pricing.p3.price">Starting at $1,500–$2,500</p>
-          <p class="pricing-card__desc" data-i18n="pricing.p3.desc">For law firms that want a full modern website plus AI intake workflow.</p>
+          <h2 class="pricing-card__title" data-i18n="pricing.p3.title">Complete Firm Automation System</h2>
+          <p class="pricing-card__start" data-i18n="pricing.p3.start">Starting at $3,500</p>
+          <p class="pricing-card__deposit" data-i18n="pricing.p3.deposit">$1,500 deposit required to start</p>
           <p class="pricing-card__includes" data-i18n="pricing.includes">Includes:</p>
           <ul class="pricing-card__list">
-            <li data-i18n="pricing.p3.i1">Everything in Website Modernization</li>
-            <li data-i18n="pricing.p3.i2">Everything in AI Intake Add-on</li>
-            <li data-i18n="pricing.p3.i3">Custom intake flow setup</li>
-            <li data-i18n="pricing.p3.i4">Practice area configuration</li>
-            <li data-i18n="pricing.p3.i5">Launch support</li>
-            <li data-i18n="pricing.p3.i6">Optional monthly maintenance</li>
+            <li data-i18n="pricing.p3.i1">Full website modernization</li>
+            <li data-i18n="pricing.p3.i2">AI intake assistant</li>
+            <li data-i18n="pricing.p3.i3">Attorney dashboard preview</li>
+            <li data-i18n="pricing.p3.i4">Email notification workflow</li>
+            <li data-i18n="pricing.p3.i5">Practice area customization</li>
+            <li data-i18n="pricing.p3.i6">Intake flow customization</li>
+            <li data-i18n="pricing.p3.i7">Launch support</li>
+            <li data-i18n="pricing.p3.i8">Optional monthly maintenance</li>
           </ul>
           <a
             class="btn btn--primary pricing-card__cta"
@@ -181,7 +216,7 @@
           <p class="footer__brand">BoniStudio</p>
           <p class="site-footer__tag" data-i18n="nav.tagline">AI Automation Studio</p>
           <p class="site-footer__tagline" data-i18n="footer.tagline">
-            Modern websites and AI-assisted workflow systems for professional service businesses.
+            Modern websites and AI-assisted intake systems for professional service businesses.
           </p>
           <p class="site-footer__meta" data-i18n="footer.location">Seattle, WA</p>
           <p class="site-footer__meta">
@@ -196,6 +231,7 @@
             <li><a href="contact.html" data-i18n="footer.linkContact">Contact</a></li>
             <li><a href="privacy.html" data-i18n="footer.linkPrivacy">Privacy Policy</a></li>
             <li><a href="terms.html" data-i18n="footer.linkTerms">Terms of Service</a></li>
+            <li><a href="demo/law-firm-intake.html" data-i18n="footer.linkDemo">Law Firm Demo</a></li>
           </ul>
         </div>
       </div>

@@ -70,8 +70,12 @@
 
   var I18N = {
     en: {
-      "meta.titleIntake": "Law Firm AI Intake System | BoniStudio",
-      "meta.titleAdmin": "Law Firm Admin Preview | BoniStudio",
+      "meta.titleIntake": "Law Firm AI Intake System — BoniStudio",
+      "meta.titleAdmin": "Law Firm Admin Preview — BoniStudio",
+      "meta.descIntake":
+        "Interactive demo: AI-assisted law firm intake, structured attorney brief, and bilingual workflow — BoniStudio.",
+      "meta.descAdmin":
+        "Attorney dashboard preview for AI-assisted intake — demonstration only — BoniStudio.",
 
       "nav.brand": "BoniStudio",
       "nav.tag": "Law Firm AI Intake System",
@@ -79,6 +83,7 @@
       "nav.home": "Back to Home",
       "nav.admin": "Admin Preview",
       "nav.intake": "Back to Intake Demo",
+      "nav.pricing": "View Pricing",
       "nav.contact": "Contact Us",
       "lang.toggle": "中文",
 
@@ -218,7 +223,7 @@
       "pkg.p1i5": "Bilingual language support",
       "pkg.p1i6": "Contact and consultation CTA",
       "pkg.p1i7": "Basic SEO setup",
-      "pkg.p2t": "AI Intake Add-on",
+      "pkg.p2t": "AI Intake System",
       "pkg.p2d": "For law firms that already have a website and want to add AI-powered intake.",
       "pkg.p2i1": "Embedded AI chat intake assistant",
       "pkg.p2i2": "Structured attorney brief",
@@ -227,7 +232,7 @@
       "pkg.p2i5": "Secure dashboard preview",
       "pkg.p2i6": "Document checklist",
       "pkg.p2i7": "Bilingual summary",
-      "pkg.p3t": "Complete Law Firm System",
+      "pkg.p3t": "Complete Firm Automation System",
       "pkg.p3d": "For firms that want a full modern website plus AI intake workflow.",
       "pkg.p3i1": "Everything in Website Modernization and AI Intake Add-on",
       "pkg.p3i2": "Custom practice area setup",
@@ -410,12 +415,22 @@
       "risk.body":
         "It does not answer legal questions, predict outcomes, or substitute for an attorney's independent professional judgment. It only organizes intake information so law firm staff can review potential clients more efficiently.",
 
+      "trust.title": "Built with privacy in mind",
+      "trust.lead":
+        "The demo does not collect real client information. A production version would use authenticated access, secure database storage, controlled document access, and email alerts that avoid exposing sensitive details.",
+      "trust.b1": "No legal advice from AI",
+      "trust.b2": "Attorney review required",
+      "trust.b3": "Secure dashboard model",
+      "trust.b4": "Stripe handles payments",
+      "trust.b5": "Demo data stays local in browser",
+
       "final.title": "Want to see how this could work for your law firm?",
       "final.sub":
         "Send us your current website or intake workflow. We can recommend whether you need a full website upgrade or an AI intake add-on.",
       "final.cta": "Email BoniStudio",
       "final.pricing": "View Pricing",
       "final.contact": "Contact Us",
+      "final.payAiDeposit": "Pay AI Intake Deposit",
       "final.payCompleteDeposit": "Pay Complete System Deposit",
 
       "admin.hero.title": "What your firm sees after the chat intake.",
@@ -471,8 +486,11 @@
     },
 
     zh: {
-      "meta.titleIntake": "律师事务所 AI 咨询系统 | BoniStudio",
-      "meta.titleAdmin": "律所后台预览 | BoniStudio",
+      "meta.titleIntake": "律师事务所 AI 咨询系统 — BoniStudio",
+      "meta.titleAdmin": "律所后台预览 — BoniStudio",
+      "meta.descIntake":
+        "交互式演示：AI 辅助律所咨询接待、结构化律师简报与中英双语流程 — BoniStudio。",
+      "meta.descAdmin": "律师后台预览，用于展示 AI 辅助咨询信息整理 — 仅为演示 — BoniStudio。",
 
       "nav.brand": "BoniStudio",
       "nav.tag": "律师事务所 AI 咨询系统",
@@ -480,6 +498,7 @@
       "nav.home": "返回首页",
       "nav.admin": "后台预览",
       "nav.intake": "返回咨询演示",
+      "nav.pricing": "查看定价",
       "nav.contact": "联系我们",
       "lang.toggle": "EN",
 
@@ -611,7 +630,7 @@
       "pkg.p1i5": "中英双语支持",
       "pkg.p1i6": "联系与咨询入口",
       "pkg.p1i7": "基础 SEO 设置",
-      "pkg.p2t": "AI 咨询附加模块",
+      "pkg.p2t": "AI 咨询接待系统",
       "pkg.p2d": "适合已有官网，但希望加入 AI 咨询收集能力的律师事务所。",
       "pkg.p2i1": "嵌入式 AI 聊天咨询助手",
       "pkg.p2i2": "结构化律师简报",
@@ -620,7 +639,7 @@
       "pkg.p2i5": "安全后台预览",
       "pkg.p2i6": "文件清单",
       "pkg.p2i7": "中英双语摘要",
-      "pkg.p3t": "律所完整系统",
+      "pkg.p3t": "完整律所自动化系统",
       "pkg.p3d": "适合希望同时升级官网与 AI 咨询流程的律师事务所。",
       "pkg.p3i1": "包含官网现代化与 AI 咨询模块的全部内容",
       "pkg.p3i2": "自定义法律服务领域配置",
@@ -800,12 +819,22 @@
       "risk.body":
         "助手不会回答法律问题、预测结果，也不能代替律师独立专业判断。它只负责整理初步咨询信息，便于律所团队查看潜在客户情况。",
 
+      "trust.title": "以隐私与安全为前提设计",
+      "trust.lead":
+        "当前 Demo 不用于收集真实客户资料。真实版本会使用登录验证、安全数据库存储、受控文件访问，以及避免暴露敏感细节的邮件提醒。",
+      "trust.b1": "AI 不提供法律建议",
+      "trust.b2": "需要律师审阅",
+      "trust.b3": "安全后台模型",
+      "trust.b4": "付款由 Stripe 处理",
+      "trust.b5": "演示数据仅保存在浏览器本地",
+
       "final.title": "想看看这套系统如何用于你的律师事务所吗？",
       "final.sub":
         "把你当前的网站或咨询流程发给我们，我们可以判断你更适合完整网站升级，还是只嵌入 AI 咨询模块。",
       "final.cta": "邮件联系 BoniStudio",
       "final.pricing": "查看定价",
       "final.contact": "联系我们",
+      "final.payAiDeposit": "支付 AI 咨询定金",
       "final.payCompleteDeposit": "支付完整系统定金",
 
       "admin.hero.title": "客户在聊天结束后，律所看到的内容。",
@@ -887,6 +916,8 @@
       if (typeof val === "string") {
         if (el.tagName === "TITLE") {
           document.title = val;
+        } else if (el.tagName === "META") {
+          el.setAttribute("content", val);
         } else {
           el.textContent = val;
         }
